@@ -64,3 +64,5 @@ typings/
 
 # We want nice, friendly yarn.lock files, not honk-ass package-lock.json files genned by npm
 package-lock.json
+
+.cache/
