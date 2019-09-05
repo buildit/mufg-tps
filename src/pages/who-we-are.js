@@ -1,6 +1,7 @@
 import React from "react"
+import {Layout} from "../components/"
 
-export default () => <div>
+export default () =>  <Layout><div>
 <h2 id="toc_0">Who We Are</h2>
 
 <p>As a trusted provider to corporations large and small, we build relationships with our clients that align with your business objectives and provide solutions that allow you to maximize your working capital.</p>
@@ -17,4 +18,4 @@ export default () => <div>
 <h3 id="toc_2">MUFG Americas</h3>
 
 <p>We invite you to learn more about MUFG in the Americas and the range of solutions and services we offer to clients in corporate and investment banking, global trust services, transaction banking, and consumer, wealth, and commercial banking. <a href="https://mufgamericas.com">Link to Bank</a></p>
-</div>
+</div> </Layout>   

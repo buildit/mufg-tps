@@ -1,6 +1,7 @@
 import React from "react"
+import {Layout} from "../components/"
 
-export default () => <div>
+export default () =>  <Layout><div>
   <h2 id="toc_0">What We Do</h2>
 
   <ul>
@@ -15,7 +16,7 @@ export default () => <div>
 
   <p>Today both buyers and suppliers look to contain costs in their supply chain, improve working capital and free up liquidity in their cash conversion cycle. </p>
 
-  <p><img src="images/supply-chain-finance.png" alt="" /></p>
+  <p><img src="/static/images/supply-chain-finance.png" alt="" /></p>
 
   <p>Companies look to improve working capital by increasing or decreasing one of the levers in the cash conversion cycle equation. Some buyers may look to minimize DIO and DSO by discounting their receivables, or increase DPO by holding onto cash longer and extending payment terms.</p>
 
@@ -27,7 +28,7 @@ export default () => <div>
 
   <p>Buyers launch Supply Chain Finance programs that have both a financial and relationship impact</p>
 
-  <p><img src="images/benefit-for-buyers.png" alt="" /> </p>
+  <p><img src="/static/images/benefit-for-buyers.png" alt="" /> </p>
 
   <h3 id="toc_3">How Supply Chain Finance Works?</h3>
 
@@ -40,13 +41,13 @@ export default () => <div>
   <li>At invoice maturity date, the buyer pays the full approved invoice amount to MUFG</li>
   </ol>
 
-  <p><img src="images/supplier-chain-finance.png" alt="" /></p>
+  <p><img src="/static/images/supplier-chain-finance.png" alt="" /></p>
 
   <h3 id="toc_4">Benefits for Suppliers</h3>
 
   <p>Suppliers join Supply Chain Finance programs to benefit from both a financial and relationship impact as well. </p>
 
-  <p><img src="images/benefits-for-suppliers.png" alt="" /></p>
+  <p><img src="/static/images/benefits-for-suppliers.png" alt="" /></p>
 
   <ul>
   <li>Turn Accounts Receivables into cash faster</li>
@@ -82,8 +83,7 @@ export default () => <div>
   <p><strong>How will I know when I have been approved and can access the system?</strong></p>
 
   <p>We will welcome you via email when you have been approved. Your welcome email will include your User ID and instructions for accessing the system. Please NOTE that, for security reasons, your password will be separately emailed.</p>
-  import React from "react"
-
+  
   <p><strong>When will I start to receive payments?</strong></p>
 
   <p>You would begin to receive payments after you have been notified that you have completed submission of all MUFG-required documentation and been approved for the SCF program, and providing eligible invoices were approved by your Buyer for payment.</p>
@@ -114,3 +114,4 @@ export default () => <div>
 
   <p>However, if your banking information changes during the time you are participating in the MUFG SCF program, you will be required to submit new banking information and verification documents.</p>
 </div>
+</Layout>   
