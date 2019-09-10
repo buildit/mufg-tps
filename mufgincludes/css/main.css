@@ -1959,10 +1959,9 @@ textarea:focus {
       height: 30px;
       margin: 0; }
     .container-header .main-nav-links {
-      margin-left: 20px;
-      margin-top: 6px; }
+      margin: 20px 150px 0;}
     .container-header .nav-link {
-      margin-left: 10px; }
+      margin-left: 20px; }
     .container-header .region-label {
       margin: 14px 0 0;
       font-size: 16px; } }
@@ -1998,7 +1997,7 @@ textarea:focus {
       margin-left: 24px; } }
   @media screen and (min-width: 990px) {
     .container-header .main-nav-links {
-      margin: 35px 225px 0 }
+      margin: 35px 230px 0 }
     .container-header .nav-link {
       margin-left: 40px; } }
 
