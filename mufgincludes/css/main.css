@@ -1211,7 +1211,7 @@ body {
     width: 100%;
     max-width: 1040px;
     margin: 0 auto;
-    padding: 0 25px; }
+    padding: 0 25px 15px; }
     .container .row h3 {
       color: #5a5a5a;
       padding-top: 20px; }
@@ -1961,7 +1961,7 @@ textarea:focus {
     .container-header .main-nav-links {
       margin: 20px 150px 0;}
     .container-header .nav-link {
-      margin-left: 20px; }
+      margin-left: 15px; }
     .container-header .region-label {
       margin: 14px 0 0;
       font-size: 16px; } }
@@ -2195,7 +2195,8 @@ textarea:focus {
   .content-header .row {
     padding: 0 15px; }
   .content-header .page-banner {
-    position: relative; }
+    position: relative; 
+    top: 70px;}
     .content-header .page-banner .title-position {
       position: absolute;
       width: 100%;
@@ -2353,20 +2354,8 @@ textarea:focus {
       padding: 35px 25px 35px 25px; } }
 
 .container-footer {
-  padding: 15px 0 50px 0;
+  padding: 15px 0 0 0;
   background: #edebeb; }
-  .container-footer .footer-newsletter {
-    padding: 40px 0;
-    font-family: "Graphik-Extralight-Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-stretch: normal;
-    font-weight: 200;
-    border-bottom: 1px solid #cbc9c9; }
-    .container-footer .footer-newsletter .subscribe-label {
-      color: #333;
-      font-size: 1em; }
-    .container-footer .footer-newsletter .subscribe-btn {
-      margin-left: 0px; }
   .container-footer .footer-links {
     margin-top: 25px; }
     .container-footer .footer-links::after {
@@ -2430,7 +2419,12 @@ textarea:focus {
     .container-footer .footer-links a {
       position: relative;
       color: #333; }
-  .container-footer .footer-copyright {
+  .container-footer .copyright-block {
+    background-color: white;
+    height: 20vh;
+    border-top: 4px solid #E60000;
+  }
+  .container-footer .copyright-block .footer-copyright {
     margin-top: 40px;
     font-size: 0.625em;
     text-align: center; }
@@ -2438,10 +2432,6 @@ textarea:focus {
     .container-footer .footer-block {
       margin-right: 15px;
       margin-left: 15px; }
-    .container-footer .footer-newsletter .subscribe-label {
-      font-size: 1.75em; }
-    .container-footer .footer-newsletter .subscribe-btn {
-      margin-left: 20px; }
     .container-footer .footer-links .links-column.column-terms {
       width: 20%; }
     .container-footer .footer-links .links-column.column-related {
@@ -2460,7 +2450,7 @@ textarea:focus {
       width: 15%;
       margin-top: 0;
       text-align: right; }
-    .container-footer .footer-copyright {
+    .container-footer .copyright-block .footer-copyright {
       font-size: 0.8125em; } }
 
 .homepage .section {
