@@ -90,17 +90,17 @@ var jquery = jQuery.noConflict();
             var mainNav = $('.main-nav-links'),
                 subNav = $('.main-sub-nav'),
                 fadeTimer = 350;
-            $('.nav-link',mainNav).on('mouseenter',function(){
+            $('.nav-link-hover',mainNav).on('mouseenter',function(){
                 clearTimeout(mainNav.data('timeoutId'));
                 var group = $(this).data('group');
-                $('.nav-link.link-active').removeClass('link-active');
+                $('.nav-link-hover.link-active').removeClass('link-active');
                 $(this).addClass('link-active');
                 $('.sub-nav-group.group-active').removeClass('group-active');
                 $('.sub-nav-group[data-group="'+group+'"]').addClass('group-active');
                 subNav.fadeIn(200);
             }).on('mouseleave',function(){
                 var timeoutId = setTimeout(function(){
-                    $('.nav-link.link-active').removeClass('link-active');
+                    $('.nav-link-hover.link-active').removeClass('link-active');
                     subNav.fadeOut(200);
                 },fadeTimer);
                 mainNav.data('timeoutId',timeoutId);
@@ -110,10 +110,10 @@ var jquery = jQuery.noConflict();
             subNav.on('mouseenter',function(){
                 clearTimeout(mainNav.data('timeoutId'));
                 var group = $('.group-active',this).data('group');
-                $('.nav-link[data-group="'+group+'"]').addClass('link-active');
+                $('.nav-link-hover[data-group="'+group+'"]').addClass('link-active');
             }).on('mouseleave',function(){
                 var timeoutId = setTimeout(function(){
-                    $('.nav-link.link-active').removeClass('link-active');
+                    $('.nav-link-hover.link-active').removeClass('link-active');
                     subNav.fadeOut(200);
                 },fadeTimer);
                 mainNav.data('timeoutId',timeoutId);
@@ -132,7 +132,7 @@ var jquery = jQuery.noConflict();
             });
 
             // trigger for accessing mobile sub nav
-            $('.nav-group-link').on('click', function(e){
+            $('.nav-group-link-hover').on('click', function(e){
                 e.preventDefault();
                 var group = $(this).data('group');
                 $('.nav-group.group-active').removeClass('group-active');
