@@ -1238,7 +1238,7 @@ body {
         margin-left: 1.818181%; }
       .container .row .column-module {
         float: left;
-        margin-right: 4%; 
+        padding-right: 4%; 
         background-color: white;}
         .container .row .column-module .module-video {
           padding-top: 0; 
@@ -2232,7 +2232,7 @@ textarea:focus {
     .content-header .page-banner .subhead {
       display: none; }
   .content-header .utility-modules {
-    padding-top: 28px; }
+    padding-top: 9vh; }
     .content-header .utility-modules.social-active {
       padding-top: 10px;
       padding-bottom: 8px; }
@@ -2283,7 +2283,8 @@ textarea:focus {
         color: #ffffff;
         font-size: 1.5vw; }
       .content-header .utility-modules {
-        padding-top: 10px; }
+        padding-top: 10px; 
+        padding-top: 7vh;}
         .content-header .utility-modules::after {
           clear: both;
           content: "";
@@ -2314,7 +2315,7 @@ textarea:focus {
 .content-sections .section {
   padding: 35px 0; }
   .content-sections .section:first-child {
-    padding: 0 0 55px 0; }
+    padding: 0 0 0 0; }
   .content-sections .section:nth-child(2n) {
     background: #f6f6f6; }
   .content-sections .section h3 {
@@ -2326,7 +2327,7 @@ textarea:focus {
     .content-sections .section {
       padding: 63px 0 61px; }
       .content-sections .section:first-child {
-        padding: 0 0 55px 0; } }
+        padding: 0 0 0 0; } }
 
 .content-title {
   margin-bottom: 15px; }
