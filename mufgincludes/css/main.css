@@ -1408,6 +1408,20 @@ ol ul {
 li {
   margin-bottom: 1rem; }
 
+  ol.list-numbered {
+    counter-reset: item;
+    list-style-type: none;}  
+    ol.list-numbered li {
+      position: relative; }
+      ol.list-numbered li:before {
+        display: inline-block;
+        width: 7px;
+        position: absolute;
+        left: -25px;
+        content: counter(item) ') ';
+        counter-increment: item;
+        background-color: #FFF;
+        text-align: center;}
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .btn,
