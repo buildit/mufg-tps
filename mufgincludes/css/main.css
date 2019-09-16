@@ -1494,7 +1494,8 @@ input[type=text], textarea {
   border-bottom: transparent;
   padding: 3px 0px 3px 3px;
   margin: 5px 1px 3px 0px; 
-  height: 3vh;}
+  height: 3vh;
+  outline: none;}
 
 input[type=email], textarea {
   -webkit-transition: all 0.30s ease-in-out;
@@ -1508,7 +1509,8 @@ input[type=email], textarea {
   border-bottom: transparent;
   padding: 3px 0px 3px 3px;
   margin: 5px 1px 3px 0px; 
-  height: 3vh;}
+  height: 3vh;
+  outline: none;}
 
 input[type=text]:focus,
 textarea:focus {
@@ -1542,6 +1544,9 @@ textarea:focus {
     padding-top: 2vh;
     padding-right: 3vw;
   }
+  .contact-row  #contact-company {
+    width: 48%;
+  }
   
   .contact-form .captcha-box {
     border: 1px solid gray;
@@ -1554,10 +1559,16 @@ textarea:focus {
 .contact-form .submit-btn {
   font-size: 0.9375em; }
 
+.contact-response {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .contact-form .contact-row {
-    display: block;
-  }
+    display: block;}
+    
+  .contact-row #contact-company {
+    width: 100%;}
 }
 
 /* Utilities

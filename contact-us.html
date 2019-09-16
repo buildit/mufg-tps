@@ -63,36 +63,36 @@
                     <div class="contact-row">
                         <div class="contact-column">
                             <div>
-                                <label>Name</label>
-                                <input type="text" name="name" required>
+                                <label for="contact-name">Name</label>
+                                <input id="contact-name" type="text" name="name" max="50" required>
                             </div>  
                         </div>
                         <div class="contact-column">
                             <div>
-                                <label>Work Email</label>
-                                <input type="email" name="email" required>
+                                <label for="contact-email">Work Email</label>
+                                <input id="contact-email" type="email" name="email" required>
                             </div>
                         </div>  
                     </div>
                     <div class="contact-row">
                         <div class="contact-column">
                             <div>
-                                <label>Job Function</label>
-                                <input type="text" name="job" required>
+                                <label for="contact-job">Job Function</label>
+                                <input id="contact-job" type="text" name="job" required>
                             </div>
                         </div>
                         <div class="contact-column">
                             <div>
-                                <label>Location (State, Territory, Country)</label>
-                                <input type="text" name="location" required>
+                                <label for="contact-location">Location (State, Territory, Country)</label>
+                                <input id="contact-location" type="text" name="location" required>
                             </div>
                         </div>
                     </div>
                     <div class="contact-row">
                         <div class="contact-column">
                             <div>
-                                <label>Company</label>
-                                <input type="text" name="company" required>
+                                <label for="contact-company">Company</label>
+                                <input id="contact-company" type="text" name="company" required>
                             </div>
                         </div>
                     </div>
@@ -103,6 +103,7 @@
                     </div>
                     <input class="btn submit-btn" type="submit" value="Submit">
                 </form>
+                <div class="contact-response">Your form was submitted successfully.</div>
             </div>
         </div>
     </div>
@@ -110,24 +111,13 @@
 
 <!--#include file="./Footer.html"-->
 
-<div class="container overlay"></div>
-
-</div>
-
-<div id="mufgModal" class="reveal-modal">
-    <h1 class="modal-header">Lorem ipsum dolor sit amet</h1>
-    <p class="modal-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue sodales ligula, vitae venenatis ipsum egestas nec. Aliquam erat volutpat. Etiam posuere ex sem, vel pharetra arcu auctor ac. Donec rhoncus vitae risus in vulputate. Aenean luctus est nulla, id tristique quam blandit sed. Suspendisse potenti.</p>
-    <a href="" class="modal-link">Lorem ipsum</a>
-    <a class="close-reveal-modal">&#215;</a>
-</div>
-
 <script type="text/javascript" src="mufgincludes/js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="mufgincludes/js/jquery-libs.js"></script>
 <script type="text/javascript" src="mufgincludes/js/chosen.jquery.js"></script>
 <script type="text/javascript" src="mufgincludes/js/slick.js"></script>
 <script type="text/javascript" src="mufgincludes/js/jquery.reveal.js"></script>
 <script type="text/javascript" src="mufgincludes/js/ub.cibo.MUFGAmericas.js"></script>
-
+<script type="text/javascript" src="mufgincludes/js/mufg.tps.custom.js" defer></script>
 </body>
 
 </html>
