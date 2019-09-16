@@ -43,36 +43,68 @@
                     <h3>Contact an MUFG Supply Chain Finance Professional</h3>
                     <p>To learn more about how your company can benefit from MUFG’s Supply Chain Finance program, please complete the form below, and be certain to include a work email, rather than a personal one.</p>
                     <p>One of our Supply Chain Finance Professionals will contact you shortly to discuss your interest/eligibility to participate in our program.</p>
-                    <p>* Required Fields</p>
-                    <form class="contact-form" method="post" action="">
-                        <label>Name</label>
-                        <input type="text" name="name" required>
-                        <label>Job Function</label>
-                        <input type="text" name="job" required>
-                        <label>Company</label>
-                        <input type="text" name="company" required>
-                        <label>Work Email</label>
-                        <input type="email" name="email" required>
-                        <label>Location (State, Territory, Country)</label>
-                        <input type="text" name="location">
-                        <input class="btn submit-btn" type="submit" value="Submit">
-                        <div>
-                            <em>add captcha box here</em>
-                        </div>
-                    </form>
                 </div>
                 <div class="column-side content-sidebar">
-                    <!-- class contact-form needed for mobile styles-->
-                    <div class="sidebar-module contact-form">
-                        <p><strong>If you are an existing supplier and require support, please:</strong></p>
-                        <p>Email: <a href="mailto://SCFsupport@us.mufg.jp" class="link-plain">SCFsupport at us.mufg.jp</a></p>
-                        <p>Or call:</p>
-                        <p>Customer Support Toll Free:</p>
-                        <p><a href="tel:18007824082" class="link-plain">+1.800.782.4082</a>, Ext. 4</p>
-                    </div>
+                        <!-- class contact-form needed for mobile styles-->
+                        <div class="sidebar-module contact-form">
+                            <p><strong>If you are an existing supplier and require support, please:</strong></p>
+                            <p>Email: <a href="mailto://SCFsupport@us.mufg.jp" class="link-plain">SCFsupport at us.mufg.jp</a></p>
+                            <p>Or call:</p>
+                            <p>Customer Support Toll Free:</p>
+                            <p><a href="tel:18007824082" class="link-plain">+1.800.782.4082</a>, Ext. 4</p>
+                        </div>
                 </div>
             </div><!-- /row -->
         </div><!-- /section -->
+        <div class="section" style="background: white" >
+            <div class="row default-columns">
+            <p>* Required Fields</p>
+                <form class="contact-form" method="post" action="">
+                    <div class="contact-row">
+                        <div class="contact-column">
+                            <div>
+                                <label>Name</label>
+                                <input type="text" name="name" required>
+                            </div>  
+                        </div>
+                        <div class="contact-column">
+                            <div>
+                                <label>Work Email</label>
+                                <input type="email" name="email" required>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="contact-row">
+                        <div class="contact-column">
+                            <div>
+                                <label>Job Function</label>
+                                <input type="text" name="job" required>
+                            </div>
+                        </div>
+                        <div class="contact-column">
+                            <div>
+                                <label>Location (State, Territory, Country)</label>
+                                <input type="text" name="location" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <div class="contact-column">
+                            <div>
+                                <label>Company</label>
+                                <input type="text" name="company" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row">
+                        <div class="captcha-box">
+                        </div>
+                        <div style="padding-top: 33px">CAPTCHA</div>
+                    </div>
+                    <input class="btn submit-btn" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
     </div>
 </div><!-- /container-main -->
 
