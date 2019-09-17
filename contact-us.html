@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="https://mufgamericas.com/sites/default/files/favicon_0_0.ico">
+    <link rel="shortcut icon" href="static-assets/favicon.ico">
 
     <title>MUFG</title>
 
@@ -12,14 +12,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
      <!-- Page styles -->
-    <link rel="stylesheet" href="mufgincludes/css/main.css">
+    <link rel="stylesheet" href="static-assets/css/main.css">
 
      <!-- Picturefill -->
     <script>
         // Picture element HTML5 shiv
         document.createElement( "picture" );
     </script>
-    <script type="text/javascript" src="mufgincludes/js/picturefill.js" async></script>
+    <script type="text/javascript" src="scripts/js/picturefill.js" async></script>
 </head>
 <body class="general">
 
@@ -30,7 +30,7 @@
         <div class="row">
             <div class="utility-modules">
                 <div class="column-main breadcrumb">
-                    <a class="breadcrumb-link" href="#">MUFG Americas</a>
+                    <a class="breadcrumb-link" href="index.html">MUFG Americas</a>
                     <span class="breadcrumb-current">Contact Us</span>
                 </div>
             </div>
@@ -59,18 +59,18 @@
         <div class="section" style="background: white" >
             <div class="row default-columns">
             <p>* Required Fields</p>
-                <form class="contact-form" method="post" action="">
+                <form id="contact-form" name="contact-form" method="post" onsubmit="sendData">
                     <div class="contact-row">
                         <div class="contact-column">
                             <div>
                                 <label for="contact-name">Name</label>
-                                <input id="contact-name" type="text" name="name" max="50" required>
+                                <input id="contact-name" type="text" name="name" max="50" required/>
                             </div>  
                         </div>
                         <div class="contact-column">
                             <div>
                                 <label for="contact-email">Work Email</label>
-                                <input id="contact-email" type="email" name="email" required>
+                                <input id="contact-email" type="email" name="email" required/>
                             </div>
                         </div>  
                     </div>
@@ -78,13 +78,13 @@
                         <div class="contact-column">
                             <div>
                                 <label for="contact-job">Job Function</label>
-                                <input id="contact-job" type="text" name="job" required>
+                                <input id="contact-job" type="text" name="job" required/>
                             </div>
                         </div>
                         <div class="contact-column">
                             <div>
                                 <label for="contact-location">Location (State, Territory, Country)</label>
-                                <input id="contact-location" type="text" name="location" required>
+                                <input id="contact-location" type="text" name="location" required/>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                         <div class="contact-column">
                             <div>
                                 <label for="contact-company">Company</label>
-                                <input id="contact-company" type="text" name="company" required>
+                                <input id="contact-company" type="text" name="company" required/>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                         </div>
                         <div style="padding-top: 33px">CAPTCHA</div>
                     </div>
-                    <input class="btn submit-btn" type="submit" value="Submit">
+                    <input class="btn submit-btn" type="submit" value="Submit"/>
                 </form>
                 <div class="contact-response">Your form was submitted successfully.</div>
             </div>
@@ -111,13 +111,10 @@
 
 <!--#include file="./Footer.html"-->
 
-<script type="text/javascript" src="mufgincludes/js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="mufgincludes/js/jquery-libs.js"></script>
-<script type="text/javascript" src="mufgincludes/js/chosen.jquery.js"></script>
-<script type="text/javascript" src="mufgincludes/js/slick.js"></script>
-<script type="text/javascript" src="mufgincludes/js/jquery.reveal.js"></script>
-<script type="text/javascript" src="mufgincludes/js/ub.cibo.MUFGAmericas.js"></script>
-<script type="text/javascript" src="mufgincludes/js/mufg.tps.custom.js" defer></script>
+<script type="text/javascript" src="scripts/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="scripts/js/jquery-libs.js"></script>
+<script type="text/javascript" src="scripts/js/ub.cibo.MUFGAmericas.js"></script> 
+<script type="text/javascript" src="scripts/js/mufg.tps.custom.js" defer></script>
 </body>
 
 </html>
