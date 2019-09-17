@@ -170,12 +170,6 @@ var jquery = jQuery.noConflict();
                 event.stopPropagation();
             });
 
-
-            // triggers the chosen plugin to apply custom styling to select inputs
-            $('.chosen-select').chosen({
-                width: '100%'
-            });
-
             // handle carousel navigation when clicking on prev next slides
             $('.slick-slide').on('click', function(e){
                 e.preventDefault();
