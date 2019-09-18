@@ -1,61 +1,36 @@
 // Check contact form inputs for validity
 window.onload = function() {
   var name = document.querySelector("#contact-name")
-  name.addEventListener('input',() => {
+  name.addEventListener('input', function () {
     name.setCustomValidity('');
     name.checkValidity();
   });
-  name.addEventListener('invalid', () => {
+  name.addEventListener('invalid', function() {
     name.setCustomValidity('Please enter your name.');
   })
 
   // Send form data
-var form = document.querySelector("#contact-form");
+var form = document.getElementById("contact-form");
 form.addEventListener("submit", function(evt) {
   evt.preventDefault();
   sendData(form)
 })
 }
 
-
-
-
-
 function sendData(form) {
     var XHR = new XMLHttpRequest();
     var formData = new FormData(form);
-    console.log('formData', formData)
-    if (XHR.status >= 200 && XHR.status < 300) {
-      console.log('success!', xhr);
-    } else {
-      console.log('request failed!')
+ 
+    // Request - Endpoint needs to be set up
+    XHR.open("POST", "http://localhost:8888/contact-us.html", true);
+    
+    // Send data
+    XHR.send(formData)
+    XHR.onload = function() {
+      if (XHR.status >= 200 && XHR.status < 300) {
+        console.log('success!', XHR);
+      } else {
+        console.log('request failed!')
+      }
     }
-
-      // Request - Endpoint needs to be set up
-      XHR.open("POST", "https://jsonplacehoder.typicode.com/posts", true);
-
-      // Send data
-      XHR.send(formData)
-
-    return false
   }
-
-// function sendData() {
- 
-  
-  
-   // define what happens on successful data submission - add success response to dom
-  // XHR.addEventListener("load", function(evt) {
-  //   alert(evt.target.responseText);
-  // });
-
-  // // Define what happens in case of error
-  // XHR.addEventListener("error", function(evt) {
-  //   alert('Ooops! Something went wrong');
-  // });
-
-  
-
- 
-// }
-
