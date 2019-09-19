@@ -86,6 +86,7 @@ a:active,
 a:hover {
   outline: 0; }
 
+
 /* Text-level semantics
    ========================================================================== */
 /**
@@ -723,6 +724,12 @@ body {
       padding-top: 33px; }
     .container .row .column-side.media h3 {
       padding-top: 0; }
+    @media screen and (max-width: 768px) {
+      .section.login-redirect {
+        text-align: center;}
+        .login-redirect .login {
+          padding-top: 5vh;}
+    }
     @media screen and (min-width: 768px) {
       .container .row .column-main {
         float: left;
@@ -788,7 +795,7 @@ body {
           clear: left; 
           background-color: #f6f6f6;
           text-align: center;}
-
+      
       .container .row.three-columns .column-module {
         width: 31%; 
         background-color: white;
@@ -2248,3 +2255,4 @@ textarea:focus {
     font-size: 1.125em; }
   .general .footnote {
     font-size: 0.8125em; } }
+  }
