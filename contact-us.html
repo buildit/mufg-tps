@@ -27,6 +27,19 @@
 
 <div class="container container-content">
     <div class="content-header banner-default">
+        <div class="page-banner">
+                <div class="title-position">
+                    <div class="title-display">
+                        <div class="title-container">
+                            <h1>Contact Us</h1>
+                        </div>
+                    </div>
+                </div>
+                <picture>
+                    <source srcset="static-assets/images/T2-category-banner-lrg.jpg" media="(min-width: 768px)">
+                    <img srcset="static-assets/images/T2-category-banner-sm.jpg" alt="Newsroom">
+                </picture>
+        </div>
         <div class="row">
             <div class="utility-modules">
                 <div class="column-main breadcrumb">
@@ -48,7 +61,7 @@
                         <!-- class contact-form needed for mobile styles-->
                         <div class="sidebar-module contact-form">
                             <p><strong>If you are an existing supplier and require support, please:</strong></p>
-                            <p>Email: <a href="mailto://SCFsupport@us.mufg.jp" class="link-plain">SCFsupport at us.mufg.jp</a></p>
+                            <a href="mailto://SCFsupport@us.mufg.jp"><img class="image-email" src="static-assets/images/email-image.png" alt="click for email address"/></a>
                             <p>Or call:</p>
                             <p>Customer Support Toll Free:</p>
                             <p><a href="tel:18007824082" class="link-plain">+1.800.782.4082</a>, Ext. 4</p>
@@ -104,7 +117,9 @@
                     </div>
                     <input class="btn submit-btn" type="submit" value="Submit"/>
                 </form>
-                <div class="contact-response">Your form was submitted successfully.</div>
+                <img class="hidden" id="loading-gif"  src="static-assets/images/ajax-loader.gif" alt="submitting form loader">
+                <div class="hidden" id="contact-response-success"><em>Your form was submitted successfully! </em></div>
+                <div class="hidden" id="contact-response-error"><em>There was an error submitting your form. Please try again later.</em></div>
             </div>
         </div>
     </div>

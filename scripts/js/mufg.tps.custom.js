@@ -26,11 +26,41 @@ function sendData(form) {
     
     // Send data
     XHR.send(formData)
+    loadingAnimation()
     XHR.onload = function() {
       if (XHR.status >= 200 && XHR.status < 300) {
-        console.log('success!', XHR);
+        successResponse()
       } else {
-        console.log('request failed!')
+        errorResponse()
       }
     }
   }
+
+function loadingAnimation() {
+  var loader = document.querySelector("#loading-gif")
+  loader.classList.remove("hidden")
+}
+
+function successResponse() {
+  var elem = document.querySelector("#contact-response-success");
+  var loader = document.querySelector("#loading-gif")
+  clearInputs();
+  elem.className = "contact-success";
+  loader.className = "hidden";
+}
+
+function errorResponse() {
+  var elem = document.querySelector("#contact-response-error");
+  var loader = document.querySelector("#loading-gif")
+  clearInputs();
+  elem.className = "contact-error";
+  loader.className = "hidden";
+}
+
+function clearInputs() {
+  var allInputs = [];
+  allInputs.push(document.getElementById("contact-name"), document.getElementById("contact-email"), document.getElementById("contact-job"), document.getElementById("contact-location"), document.getElementById("contact-company"))
+  for (var i = 0; i < allInputs.length; i++) {
+    allInputs[i].value = ""
+  }
+}

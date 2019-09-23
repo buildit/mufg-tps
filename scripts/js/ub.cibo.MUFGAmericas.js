@@ -125,7 +125,7 @@ var jquery = jQuery.noConflict();
             });
             $('.mobile-nav-close').on('click', function() {
                 $('body').addClass('mobile-nav-close');
-                $('.container.overlay').one(transitionEvent, function(){
+                $('.container').one(transitionEvent, function(){
                     $('body').removeClass('mobile-nav-open mobile-nav-close');
                     $('.mobile-nav-secondary').removeClass('nav-active');
                 });
