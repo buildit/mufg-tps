@@ -755,6 +755,7 @@ body {
           margin-right: 8%;
           width: 40%; 
           background-color: white;
+          padding-top:3vh;
           }
         .container .row.two-columns .column-module.login.left {
           margin-right: 8%;
@@ -866,10 +867,25 @@ p {
   margin-top: 0;
   font-size: 0.8125em;
   line-height: 1.5; }
-  @media screen and (min-width: 768px) {
-    p {
-      font-size: 15px;
-      line-height: 1.6; } }
+@media screen and (max-width: 768px) {
+  .answer {
+    line-height: 1.7;
+    padding-bottom:2vh;}}
+
+p.faq-a {
+  float: left;
+  padding-right: 7px;}
+@media screen and (max-width: 768px) {
+  p.faq-a {
+    height: 4vh;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 15px;
+    line-height: 1.6; } }
 
 strong {
   font-family: "Graphik-Regular-Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -922,6 +938,17 @@ img {
   display: block;
   width: 100%; }
 
+img.GE-logo {
+  width: 25%;
+  margin: auto;
+  padding-bottom: 2vh;
+}
+
+.image-email {
+  width: 210px;
+  margin-left: -4px;
+  margin-bottom: 7px;
+}
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
@@ -1105,7 +1132,15 @@ textarea:focus {
 #contact-form .submit-btn {
   font-size: 0.9375em; }
 
-.contact-response {
+.contact-success {
+  color: green;
+}
+
+.contact-error {
+  color: red;
+}
+
+.hidden {
   display: none;
 }
 
@@ -1124,6 +1159,10 @@ textarea:focus {
 
 .desktop-hide {
   display: initial !important; }
+
+#loading-gif {
+  width: 30px;
+}
 
 @media screen and (min-width: 768px) {
   .mobile-hide {
@@ -1403,7 +1442,8 @@ textarea:focus {
           font-style: normal;
           font-stretch: normal;
           font-weight: 400;
-          font-size: 0.875em; }
+          font-size: 0.875em; 
+          padding-left: 3vw;}
           .container-header .sub-nav-group .sub-nav-link.overview-link {
             margin-top: 0;
             padding-bottom: 30px;
@@ -1865,7 +1905,7 @@ textarea:focus {
         clear: left;
         margin-top: 20px; }
     .container-footer .footer-links .link-header {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       font-family: "Graphik-Medium-Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-stretch: normal;
@@ -1874,10 +1914,13 @@ textarea:focus {
       font-size: 0.8125em;
       text-transform: uppercase;
       line-height: 13px; }
+  
     .container-footer .footer-links .link-linkedin {
       position: relative;
       color: #333;
-      padding-right: 30px; }
+      padding-right: 30px; 
+      height: 50px ;
+      top: -4px;}
       .container-footer .footer-links .link-linkedin:after {
         content: '';
         position: absolute;
@@ -1885,21 +1928,37 @@ textarea:focus {
         right: 0;
         width: 22px;
         height: 22px;
-        background: url("../images/icon-linkedin.png") no-repeat;
+        background: url("../images/icon-linkedin-footer.svg") no-repeat;
         background-size: contain; }
-      .container-footer .footer-links .link-twitter {
-        position: relative;
-        color: #333;
-        padding-right: 30px; }
-        .container-footer .footer-links .link-twitter:after {
-          content: '';
-          position: absolute;
-          top: -5px;
-          right: 0;
-          width: 22px;
-          height: 22px;
-          background: url("../images/icon-twitter.png") no-repeat;
-          background-size: contain; }
+    .container-footer .footer-links .link-twitter {
+      position: relative;
+      color: #333;
+      padding-right: 30px; 
+      margin:5px;}
+      .container-footer .footer-links .link-twitter:after {
+        content: '';
+        position: absolute;
+        top: -5px;
+        right: 0;
+        width: 22px;
+        height: 22px;
+        background: url("../images/icon-twitter-footer.svg") no-repeat;
+        background-size: contain; }
+    /* <!--change to youtube --> */
+    .container-footer .footer-links .link-youtube {
+      position: relative;
+      color: #333;
+      padding-right: 30px; 
+      margin:5px;}
+      .container-footer .footer-links .link-youtube:after {
+        content: '';
+        position: absolute;
+        top: -5px;
+        right: 0;
+        width: 22px;
+        height: 22px;
+        background: url("../images/icon-youtube-footer.svg") no-repeat;
+        background-size: contain; }
     .container-footer .footer-links ul {
       list-style: none;
       margin: 0;
@@ -2010,7 +2069,8 @@ textarea:focus {
   margin: 0 5px; }
   .homepage .news-item .item-text {
     width: 100%;
-    padding: 20px 10px 15px 15px;}
+    padding: 20px 10px 15px 15px;
+    background: rgba(128, 128,128, 0.6);}
   .homepage .news-item .item-topic {
     color: #333;
     font-family: "Graphik-Medium-Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
