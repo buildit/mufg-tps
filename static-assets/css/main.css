@@ -759,9 +759,7 @@ body {
         .container .row.two-columns .column-module.login.right {
           margin-right: 8%;
           width: 40%; 
-          background-color: white;
-          padding-top:3vh;
-          }
+          background-color: white;}
         .container .row.two-columns .column-module.login.left {
           margin-right: 8%;
           margin-left: -40px;
@@ -949,6 +947,11 @@ img.GE-logo {
   padding-bottom: 2vh;
 }
 
+img.MUFG-logo {
+  width: 36%;
+  margin: auto;
+  padding-bottom: 30px;}
+
 .image-email {
   width: 210px;
   margin-left: -4px;
@@ -1045,7 +1048,7 @@ a.btn.location {
   width: 60%;}
 a.btn.scg {
   width: 65%;
-  margin-top: 5vh;}
+  margin-top: 55px;}
 
   /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
