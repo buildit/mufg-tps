@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="static-assets/favicon.ico">
+    <link rel="shortcut icon" href="static-assets/favicon.ico?v=2">
 
     <title>MUFG</title>
 
@@ -13,6 +13,11 @@
 
      <!-- Page styles -->
     <link rel="stylesheet" href="static-assets/css/main.css">
+    <script type=text/javascript src="../GECA/forms/js/jquery-1.9.1.min.js"></script>
+    <!-- For testing - remove before sending -->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+
 
      <!-- Picturefill -->
     <script>
@@ -53,12 +58,11 @@
                     <a href="what-we-do.html#faq" class="nav-link">Frequently Asked Questions</a>
                 </div>
                 <div class="nav-group" data-group="activate-login">
-                    <p class="nav-link overview-link">Register / Login</p>
-                    <p>MUFG SCF Program Participant</p>
-                    <a href="#" class="nav-link">Register</a>
-                    <a href="#" class="nav-link">Login</a>
-                    <a href="#" class="nav-link">Forgot Password</a>
-                    
+                    <p>MUFG SCF Program Participant:</p>
+                    <a href="/tps2/html/authentication/userSecurity.html#/register" class="nav-link">Register</a>
+                    <a href="/tps2/html/authentication/userSecurity.html#/login" class="nav-link">Login</a>
+                    <a href="/tps2/html/authentication/userSecurity.html#/forgotPassword" class="nav-link">Forgot Password</a>
+                    <a href="/tps2/html/authentication/userSecurity.html#/changePassword" class="nav-link">Reset Password</a>
                 </div>
             </div>
         </div>
@@ -116,20 +120,20 @@
                             </div>
                         </div>
                         <div class="sub-nav-group" data-group="activate-login">
-                            <div class="group-links three-column">
+                            <div class="group-links two-column">
                                 <div class="row inner-row">
                                     <div class="group-links-column">
-                                        <a class="sub-nav-link overview-link" href="#">Activate / Login</a>
+                                        <p class="sub-nav-title overview-link">MUFG SCF Program Participant</p>
                                     </div>
                                 </div>
                                 <div class="row inner-row">
                                     <div class="group-links-column">
                                         <div class="sub-nav-link">
-                                        <p>MUFG SCF Program Participant</p>
-                                        <a href="#" class="sub-nav-link">Register</a>
-                                        <a href="#" class="sub-nav-link">Login</a>
-                                        <a href="#" class="sub-nav-link">Forgot Password</a>
-                                    </div>
+                                            <a href="/tps2/html/authentication/userSecurity.html#/register" class="sub-nav-link">Register</a>
+                                            <a href="/tps2/html/authentication/userSecurity.html#/login" class="sub-nav-link">Login</a>
+                                            <a href="/tps2/html/authentication/userSecurity.html#/forgotPassword" class="sub-nav-link">Forgot Password</a>
+                                            <a href="/tps2/html/authentication/userSecurity.html#/changePassword" class="sub-nav-link">Reset Password</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -167,9 +171,11 @@
         <div class="section section-main">
             <div class="row seven-five">
                 <div class="column-main">
-                    <h2>Who We Are</h2>
+                    
                     <div class="row inner-row">
                         <div class="column-module">
+                            <h2>Who We Are</h2>
+                            <p></p>
                             <p>Mitsubishi UFJ Financial Group (MUFG) is a Top 5 Global Corporate Bank<sup>1</sup> and Japan’s largest financial institution with total assets of $2.8 trillion<sup>2</sup>, a $70 billion market capitalization<sup>3</sup>, and 150,000 employees in 450 locations in more than 50 countries around the world.</p>
                             <p>In the United States, we’re 13,000 employees strong, working together to positively impact every client, organization, and community we serve. Leveraging the strength of the financial group, we provide comprehensive solutions, global perspective, and specialized industry coverage.</p>
                             <p>As a trusted provider to corporations large and small, we build relationships with our clients that align with your business objectives and provide solutions that allow you to maximize your working capital.</p>
@@ -252,8 +258,6 @@
       
 </div>
 
-<script type="text/javascript" src="scripts/js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="scripts/js/jquery-libs.js"></script>
 <script type="text/javascript" src="scripts/js/slick.js"></script>
 <script type="text/javascript" src="scripts/js/ub.cibo.MUFGAmericas.js"></script>
 
