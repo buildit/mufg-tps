@@ -1542,7 +1542,7 @@ textarea:focus {
       font-size: 19px; } }
   @media screen and (min-width: 950px) {
     .container-header .main-nav-links {
-      margin: 20px 200px 0;}
+      margin: 30px 200px 0;}
     .container-header .nav-link {
       margin-left: 24px; } }
   @media screen and (min-width: 990px) {
@@ -1742,7 +1742,7 @@ textarea:focus {
     padding: 0 15px; }
   .content-header .page-banner {
     position: relative; 
-    top: 3px;}
+    top: 4px;}
     .content-header .page-banner .title-position {
       position: absolute;
       width: 100%;
@@ -1998,7 +1998,7 @@ textarea:focus {
       color: #333; }
   .container-footer .copyright-block {
     background-color: white;
-    height: 11vh;
+    padding-bottom: 60px;
     border-top: 4px solid #E60000;
   }
   .container-footer .copyright-block .footer-copyright {
