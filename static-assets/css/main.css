@@ -1218,10 +1218,6 @@ textarea:focus {
       font-size: 2.5em;
       margin-bottom: 50px; } }
 
-
-@media screen and (min-width: 768px) {
-}
-
 @media screen and (min-width: 768px) {
   .container-fixed {
     position: fixed;
@@ -2008,11 +2004,11 @@ textarea:focus {
       color: #333; }
   .container-footer .copyright-block {
     background-color: white;
-    height: 10vh;
+    height: 11vh;
     border-top: 4px solid #E60000;
   }
   .container-footer .copyright-block .footer-copyright {
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 0.625em;
     text-align: center; }
   @media screen and (min-width: 768px) {
