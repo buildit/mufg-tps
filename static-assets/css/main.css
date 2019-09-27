@@ -1219,8 +1219,8 @@ textarea:focus {
       margin-bottom: 50px; } }
 
 @media screen and (min-width: 768px) {
-  .container-fixed {
-    position: fixed;
+  .container-scroll {
+    position: static;
     width: 100%;
     z-index: 99; } }
 
@@ -1369,7 +1369,7 @@ textarea:focus {
             border: none;
             outline: none; }
       .container-header .main-nav {
-        padding: 30px 25px 0 25px; }
+        padding: 44px 25px 0 25px; }
       .container-header .mobile-nav-open {
         display: none; }
       .container-header .header-border {
@@ -1416,7 +1416,8 @@ textarea:focus {
         padding: 70px 0 50px;
         background: #f6f6f6;
         border-top: 1px solid #dadada;
-        border-bottom: 1px solid #dadada; }
+        border-bottom: 1px solid #dadada; 
+        z-index: 1;}
       .container-header .sub-nav-group {
         display: none; }
         .container-header .sub-nav-group.group-active {
@@ -1533,7 +1534,7 @@ textarea:focus {
       height: 38px;
       margin: 0; }
     .container-header .main-nav-links {
-      margin: 25px 190px 0;}
+      margin: 30px 190px 0;}
     .container-header .nav-link {
       margin-left: 20px; }
     .container-header .region-label {
@@ -1549,10 +1550,6 @@ textarea:focus {
       margin: 35px 210px 0 }
     .container-header .nav-link {
       margin-left: 40px; } }
-
-@media screen and (min-width: 768px) {
-  .container-content {
-    padding-top: 122px; } }
 
 .container-mobile-nav {
   position: absolute;
@@ -1745,7 +1742,7 @@ textarea:focus {
     padding: 0 15px; }
   .content-header .page-banner {
     position: relative; 
-    top: 70px;}
+    top: 3px;}
     .content-header .page-banner .title-position {
       position: absolute;
       width: 100%;
@@ -1797,8 +1794,6 @@ textarea:focus {
       padding: 0; }
       .content-header.banner-default {
         border-top: none; }
-        .content-header.banner-default .utility-modules {
-          border-top: 5px solid #e60000; }
           .content-header.banner-default .utility-modules::after {
             clear: both;
             content: "";
@@ -1816,8 +1811,7 @@ textarea:focus {
         color: #ffffff;
         font-size: 1.5vw; }
       .content-header .utility-modules {
-        padding-top: 10px; 
-        padding-top: 75px;}
+        padding-top: 10px; }
         .content-header .utility-modules::after {
           clear: both;
           content: "";
@@ -2158,7 +2152,7 @@ textarea:focus {
   .homepage .section-link {
     font-size: 0.9375em; }
   .homepage .recent-news {
-    padding: 30px 0 75px;
+    padding: 13px 0 75px;
     overflow: hidden; }
   .homepage .news-carousel {
     width: 692px;
