@@ -953,6 +953,14 @@ a.email-img {
   margin-bottom: 15px;
 }
 
+a.email-faq {
+  width: 190px;
+  display: inline-block;
+  /* top: 10px; */
+  /* padding-top: 5px; */
+  line-height: -1em;
+}
+
 /* Social Side
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 div.column-side.social > * {
@@ -1019,7 +1027,9 @@ li {
 
   ol.list-numbered {
     counter-reset: item;
-    list-style-type: none;}  
+    list-style-type: none;
+    margin-bottom:  2.5em;
+    }  
     ol.list-numbered li {
       position: relative; }
       ol.list-numbered li:before {
