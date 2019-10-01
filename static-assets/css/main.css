@@ -135,11 +135,10 @@ small {
 sub,
 sup {
   font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+  vertical-align: text-top;
   padding-right: 4px;
   padding-bottom: -20px;
+  position:  relative;
   }
 
 sup {
@@ -891,14 +890,15 @@ p {
 @media screen and (max-width: 768px) {
   .answer {
     line-height: 1.7;
-    padding-bottom:2vh;}}
+    padding-bottom: 2vh;
+    }}
 
 p.faq-a {
   float: left;
   padding-right: 7px;}
 @media screen and (max-width: 768px) {
   p.faq-a {
-    height: 4vh;
+    height: 7vh;
   }
 }
 
@@ -956,8 +956,6 @@ a.email-img {
 a.email-faq {
   width: 190px;
   display: inline-block;
-  /* top: 10px; */
-  /* padding-top: 5px; */
   line-height: -1em;
 }
 
@@ -1516,7 +1514,6 @@ label {
           font-stretch: normal;
           font-weight: 400;
           font-size: 0.875em;
-          /* padding-left: 3vw; */
           }
           .container-header .sub-nav-group .sub-nav-link.overview-link {
             margin-top: 0;
@@ -1534,7 +1531,6 @@ label {
           font-stretch: normal;
           font-weight: 400;
           font-size: 0.875em;
-          /* padding-left: 3vw; */
           }
           .container-header .sub-nav-group .sub-nav-title.overview-link {
             margin-top: 0;
@@ -1546,6 +1542,12 @@ label {
         color: #333333; }
       .container-header .nav-news-item .item-text {
         padding: 15px 20px; }
+      
+      @media screen and (max-width: 767px) {
+        .container-header .nav-news-item .item-text.mobile-text {
+          border: 1px solid red;
+          padding: 15px 20px; }
+      }
       .container-header .nav-news-item .item-topic {
         margin-bottom: 15px;
         font-family: "Graphik-Semibold-Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1573,6 +1575,15 @@ label {
         font-stretch: normal;
         font-weight: 400;
         font-size: 0.9375em; } }
+  @media screen and (max-width: 767px) {
+    .container-header .nav-news-item .item-title {
+      color: red;
+      font-family: "Graphik-Regular-Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-style: normal;
+      font-stretch: normal;
+      font-weight: 400;
+      font-size: 0.9375em; }
+  }
   @media screen and (min-width: 768px) {
     .container-header .logo {
       width: 126px;
@@ -2162,8 +2173,17 @@ label {
   .homepage .news-item .item-text {
     width: 100%;
     padding: 20px 10px 15px 15px;
-    /* background: rgba(128, 128,128, 0.6); */
     }
+  @media screen and (max-width: 767px) {
+    .homepage .news-item .item-text.mobile-text {
+      border: 1px solid white;
+      position:  absolute;
+      top: 25%;
+      font-size: 1.5em;
+      width: 45%;
+      }
+  }
+  
   .homepage .news-item .item-topic {
     color: #333;
     font-family: "Graphik-Medium-Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2186,10 +2206,7 @@ label {
       border-right: 1px solid #999; }
   .homepage .news-item .item-title {
     color: white;
-    /* font-size: 0.8125em; */
-    /* font-weight: 900; */
     }
-
 @media screen and (min-width: 768px) {
   .homepage .section {
     position: relative;
@@ -2255,21 +2272,22 @@ label {
       opacity: 1; }
     .homepage .news-item .item-text {
       position: absolute;
-      /* bottom: 0; */
       top: 27%;
       width: 50%;
-      /* font-size: 1.8em; */
-      /* padding: 20px 168px 25px 30px; */
       }
+    @media screen and (max-width: 767px) {
+      .homepage .news-item .item-text.mobile-text {
+        border: 1px solid red;
+        position: absolute;
+        top: 27%;
+        width: 50%;
+        }
+    }
     .homepage .news-item .item-topic {
       margin-bottom: 10px;
       font-size: 0.75em; }
     .homepage .news-item .item-byline {
       font-size: 0.75em; }
-    .homepage .news-item .item-title {
-      /* font-size: 1.125em; */
-      /* line-height: 1.45; */
-      }
 
 .section.login-redirect {
   background-color: #f6f6f6;
