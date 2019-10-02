@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,40 +12,17 @@
     <meta name="description" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-     <!-- Page styles -->
+    <!-- Page styles -->
     <link rel="stylesheet" href="static-assets/css/main.css">
-    <script type=text/javascript src="../GECA/forms/js/jquery-1.9.1.min.js"></script>
-     <!-- Picturefill -->
-     <script>
-            // Picture element HTML5 shiv
-            document.createElement( "picture" );
-            $.ajax({
-                url : "/tps/user/setRegion.json",
-                type:"POST",
-                dataType: 'json',
-                data : JSON.stringify({"userRegion": "RPA"}),
-                beforeSend : function(xhr) {
-                    xhr.setRequestHeader("AuthCode", "asd:sdff");
-                    xhr.setRequestHeader("Accept", "application/json");
-                    xhr.setRequestHeader("Content-Type", "application/json");
-                },
-                success : function(successData){
-                    console.log("region is: "+ successData);
-                },
-                error : function(errorData){
-                    console.log(errorData);
-                }
-            }).then (function(response){
-                console.log("Response from update message:- "+response);
-            });
-        </script>
+    <!-- Picturefill -->
     <script type="text/javascript" src="scripts/js/picturefill.js" async></script>
 </head>
+
 <body class="general">
 
 
-<!-- Header -->
-<div class="container-global">
+    <!-- Header -->
+    <div class="container-global">
 
         <div class="container-mobile-nav">
             <div class="mobile-nav-header">
@@ -52,9 +30,12 @@
                 <div class="mobile-nav-close"></div>
             </div>
             <div class="mobile-nav-links">
-                <a class="nav-link nav-group-link nav-group-link-hover" data-group="who-we-are" href="who-we-are.html">Who We Are</a>
-                <a class="nav-link nav-group-link nav-group-link-hover" data-group="what-we-do" href="what-we-do.html">What We Do</a>
-                <a class="nav-link nav-group-link nav-group-link-hover" data-group="activate-login" href="index.html#login-anchor-mobile">Register / Login</a>
+                <a class="nav-link nav-group-link nav-group-link-hover" data-group="who-we-are"
+                    href="who-we-are.html">Who We Are</a>
+                <a class="nav-link nav-group-link nav-group-link-hover" data-group="what-we-do"
+                    href="what-we-do.html">What We Do</a>
+                <a class="nav-link nav-group-link nav-group-link-hover" data-group="activate-login"
+                    href="index.html#login-anchor-mobile">Register / Login</a>
                 <a class="nav-link nav-group-link" data-group="contact-us" href="contact-us.html">Contact Us</a>
 
             </div>
@@ -66,8 +47,10 @@
                 </div>
                 <div class="nav-group" data-group="what-we-do">
                     <a class="nav-link overview-link" href="what-we-do.html">What We Do</a>
-                    <a href="what-we-do.html#what-supply-chain-finance" class="nav-link">What is Supply Chain Finance</a>
-                    <a href="what-we-do.html#how-supply-chain-finance" class="nav-link">How Supply Chain Finance Works for You</a>
+                    <a href="what-we-do.html#what-supply-chain-finance" class="nav-link">What is Supply Chain
+                        Finance</a>
+                    <a href="what-we-do.html#how-supply-chain-finance" class="nav-link">How Supply Chain Finance Works
+                        for You</a>
                     <a href="what-we-do.html#benefits-buyers" class="nav-link">Benefits for Buyers</a>
                     <a href="what-we-do.html#benefits-suppliers" class="nav-link">Benefits for Suppliers</a>
                     <a href="what-we-do.html#faq" class="nav-link">Frequently Asked Questions</a>
@@ -76,25 +59,29 @@
                     <p>MUFG SCF Program Participant:</p>
                     <a href="/tps2/html/authentication/userSecurity.html#/register" class="nav-link">Register</a>
                     <a href="/tps2/html/authentication/userSecurity.html#/login" class="nav-link">Login</a>
-                    <a href="/tps2/html/authentication/userSecurity.html#/forgotPassword" class="nav-link">Forgot Password</a>
-                    <a href="/tps2/html/authentication/userSecurity.html#/changePassword" class="nav-link">Reset Password</a>
+                    <a href="/tps2/html/authentication/userSecurity.html#/forgotPassword" class="nav-link">Forgot
+                        Password</a>
+                    <a href="/tps2/html/authentication/userSecurity.html#/changePassword" class="nav-link">Reset
+                        Password</a>
                 </div>
             </div>
         </div>
-    
+
         <div class="container-scroll">
             <div class="container container-header">
                 <div class="row main-nav">
-                    <div class="mobile-nav-open"><div class="menu-icon"></div></div>
+                    <div class="mobile-nav-open">
+                        <div class="menu-icon"></div>
+                    </div>
                     <a class="logo" href="index.html"><img src="static-assets/images/logo-mufg.png" alt="MUFG logo"></a>
                     <div class="region-label">Supply Chain Finance</div>
                     <div class="header-border"></div>
                     <div class="main-nav-links">
-                            <a class="nav-link nav-link-hover" data-group="who-we-are" href="who-we-are.html">Who We Are</a>
-                            <a class="nav-link nav-link-hover" data-group="what-we-do" href="what-we-do.html">What We Do</a>
-                            <span class="nav-link nav-link-hover" data-group="activate-login">Register / Login</span>
-                            <a class="nav-link" data-group="contact-us" href="contact-us.html">Contact Us</a>
-                        </div>
+                        <a class="nav-link nav-link-hover" data-group="who-we-are" href="who-we-are.html">Who We Are</a>
+                        <a class="nav-link nav-link-hover" data-group="what-we-do" href="what-we-do.html">What We Do</a>
+                        <span class="nav-link nav-link-hover" data-group="activate-login">Register / Login</span>
+                        <a class="nav-link" data-group="contact-us" href="contact-us.html">Contact Us</a>
+                    </div>
                 </div><!-- /row -->
                 <div class="main-sub-nav">
                     <div class="row">
@@ -108,7 +95,8 @@
                                 <div class="row inner-row">
                                     <div class="group-links-column">
                                         <a href="who-we-are.html#mufg-americas" class="sub-nav-link">MUFG Americas</a>
-                                        <a href="who-we-are.html#mufg-supply-chain-finance" class="sub-nav-link">MUFG Supply Chain Finance</a>
+                                        <a href="who-we-are.html#mufg-supply-chain-finance" class="sub-nav-link">MUFG
+                                            Supply Chain Finance</a>
                                     </div>
                                 </div>
                             </div>
@@ -122,11 +110,15 @@
                                 </div>
                                 <div class="row inner-row">
                                     <div class="group-links-column">
-                                        <a href="what-we-do.html#what-supply-chain-finance" class="sub-nav-link">What is Supply Chain Finance</a>
-                                        <a href="what-we-do.html#how-supply-chain-finance" class="sub-nav-link">How Supply Chain Finance Works for You</a>
+                                        <a href="what-we-do.html#what-supply-chain-finance" class="sub-nav-link">What is
+                                            Supply Chain Finance</a>
+                                        <a href="what-we-do.html#how-supply-chain-finance" class="sub-nav-link">How
+                                            Supply Chain Finance Works for You</a>
                                         <a href="what-we-do.html#benefits" class="sub-nav-link">Benefits for Buyers</a>
-                                        <a href="what-we-do.html#benefits" class="sub-nav-link">Benefits for Suppliers</a>
-                                        <a href="what-we-do.html#faq" class="sub-nav-link">Frequently Asked Questions</a>
+                                        <a href="what-we-do.html#benefits" class="sub-nav-link">Benefits for
+                                            Suppliers</a>
+                                        <a href="what-we-do.html#faq" class="sub-nav-link">Frequently Asked
+                                            Questions</a>
                                     </div>
                                 </div>
                             </div>
@@ -142,10 +134,14 @@
                                     <div class="group-links-column">
                                         <p class="sub-nav-title">MUFG SCF Program Participant</p>
                                         <div class="sub-nav-link">
-                                            <a href="/tps2/html/authentication/userSecurity.html#/register" class="btn login">Register</a>
-                                            <a href="/tps2/html/authentication/userSecurity.html#/login" class="btn login">Login</a>
-                                            <a href="/tps2/html/authentication/userSecurity.html#/forgotPassword" class="btn login">Forgot Password</a>
-                                            <a href="/tps2/html/authentication/userSecurity.html#/changePassword" class="btn login">Reset Password</a>
+                                            <a href="/tps2/html/authentication/userSecurity.html#/register"
+                                                class="btn login">Register</a>
+                                            <a href="/tps2/html/authentication/userSecurity.html#/login"
+                                                class="btn login">Login</a>
+                                            <a href="/tps2/html/authentication/userSecurity.html#/forgotPassword"
+                                                class="btn login">Forgot Password</a>
+                                            <a href="/tps2/html/authentication/userSecurity.html#/changePassword"
+                                                class="btn login">Reset Password</a>
                                         </div>
                                     </div>
                                 </div>
@@ -156,144 +152,233 @@
             </div><!-- /container-header -->
         </div><!-- /container-scroll -->
 
-<div class="container container-content">
-    <div class="content-header banner-default">
-        <div class="page-banner">
-                <div class="title-position">
-                    <div class="title-display">
-                        <div class="title-container">
-                            <h1>Contact Us</h1>
-                        </div>
-                    </div>
-                </div>
-                <picture>
-                    <source srcset="static-assets/images/Contact-Us-Large.jpg" media="(min-width: 768px)">
-                    <img srcset="static-assets/images/Contact-Us-Small.jpg" alt="Business Woman">
-                </picture>
-        </div>
-        <div class="row">
-            <div class="utility-modules">
-                <div class="column-main breadcrumb">
-                    <a class="breadcrumb-link" href="index.html">Supply Chain Finance</a>
-                    <span class="breadcrumb-current">Contact Us</span>
-                </div>
-            </div>
-        </div><!-- /row -->
-    </div><!-- /content-header -->
-    <div class="content-sections">
-        <div class="section">
-            <div class="row default-columns">
-                <div class="column-main content-body" style="padding-right: 5em">
-                    <h3>To contact an MUFG Supply Chain Finance Professional</h3>
-                    <p>To learn more about how your company can benefit from MUFG’s Supply Chain Finance program, please complete the form below, and be certain to include a work email, rather than a personal one.</p>
-                    <p>One of our Supply Chain Finance Professionals will contact you shortly to discuss your interest/eligibility to participate in our program.</p>
-                </div>
-                <div class="column-side content-sidebar">
-                        <!-- class contact-form needed for mobile styles-->
-                        <div class="sidebar-module contact-form">
-                            <p><strong>If you are an existing supplier and require support, please:</strong></p>
-                            <a href="mailto://SCFsupport@us.mufg.jp" class="email-img"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.44 12.93"><defs><style>.cls-1{font-size:12px;font-family:Graphik-Light-Web, Graphik;}.cls-2,.cls-3,.cls-4,.cls-5,.cls-6{fill:#003db6;}.cls-2{letter-spacing:0em;}.cls-4{letter-spacing:-0.02em;}.cls-5{letter-spacing:0em;}.cls-6{letter-spacing:0.01em;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><text class="cls-1" transform="translate(0 10.29)">Email: <tspan class="cls-2" x="37.01" y="0">S</tspan><tspan class="cls-3" x="44.47" y="0">C</tspan><tspan class="cls-4" x="53.23" y="0">F</tspan><tspan class="cls-5" x="59.54" y="0">suppo</tspan><tspan class="cls-6" x="94.73" y="0">r</tspan><tspan class="cls-5" x="99.3" y="0">t@us.mu</tspan><tspan class="cls-4" x="148.86" y="0">f</tspan><tspan class="cls-3" x="152.77" y="0">g.jp</tspan><tspan x="174.26" y="0"> </tspan></text></g></g></svg></a>
-                            <p>Or call:</p>
-                            <p>Customer Support Toll Free:</p>
-                            <p><a href="tel:18007824082" class="link-plain">+1.800.782.4082</a>, Ext. 4</p>
-                        </div>
-                </div>
-            </div><!-- /row -->
-        </div><!-- /section -->
-        <div class="section" style="background: white" >
-            <div class="row default-columns">
-            <p>* Required Fields</p>
-                <form id="contact-form" name="contact-form" method="post">
-                    <div class="contact-row">
-                        <div class="contact-column">
-                            <div>
-                                <label for="contact-name">Name*</label>
-                                <input id="contact-name" type="text" name="name" max="50" required/>
-                            </div>  
-                        </div>
-                        <div class="contact-column">
-                            <div>
-                                <label for="contact-email">Work Email*</label>
-                                <input id="contact-email" type="email" name="email" required/>
-                            </div>
-                        </div>  
-                    </div>
-                    <div class="contact-row">
-                        <div class="contact-column">
-                            <div>
-                                <label for="contact-job">Job Function*</label>
-                                <input id="contact-job" type="text" name="job" required/>
-                            </div>
-                        </div>
-                        <div class="contact-column">
-                            <div>
-                                <label for="contact-location">Location (State, Territory, Country)*</label>
-                                <input id="contact-location" type="text" name="location" required/>
+        <div class="container container-content">
+            <div class="content-header banner-default">
+                <div class="page-banner">
+                    <div class="title-position">
+                        <div class="title-display">
+                            <div class="title-container">
+                                <h1>Contact Us</h1>
                             </div>
                         </div>
                     </div>
-                    <div class="contact-row">
-                        <div class="contact-column">
-                            <div>
-                                <label for="contact-company">Company*</label>
-                                <input id="contact-company" type="text" name="company" required/>
-                            </div>
+                    <picture>
+                        <source srcset="static-assets/images/Contact-Us-Large.jpg" media="(min-width: 768px)">
+                        <img srcset="static-assets/images/Contact-Us-Small.jpg" alt="Business Woman">
+                    </picture>
+                </div>
+                <div class="row">
+                    <div class="utility-modules">
+                        <div class="column-main breadcrumb">
+                            <a class="breadcrumb-link" href="index.html">Supply Chain Finance</a>
+                            <span class="breadcrumb-current">Contact Us</span>
                         </div>
                     </div>
-                    <div style="display: flex; flex-direction: row">
-                        <!-- CAPTCHA PLACEHOLDER -->
-                        <!-- <div class="captcha-box"></div>
+                </div><!-- /row -->
+            </div><!-- /content-header -->
+            <div class="content-sections">
+                <div class="section">
+                    <div class="row default-columns">
+                        <div class="column-main content-body" style="padding-right: 5em">
+                            <h3>To contact an MUFG Supply Chain Finance Professional</h3>
+                            <p>To learn more about how your company can benefit from MUFG’s Supply Chain Finance
+                                program, please complete the form below, and be certain to include a work email, rather
+                                than a personal one.</p>
+                            <p>One of our Supply Chain Finance Professionals will contact you shortly to discuss your
+                                interest/eligibility to participate in our program.</p>
+                        </div>
+                        <div class="column-side content-sidebar">
+                            <!-- class contact-form needed for mobile styles-->
+                            <div class="sidebar-module contact-form">
+                                <p><strong>If you are an existing supplier and require support, please:</strong></p>
+                                <a href="mailto://SCFsupport@us.mufg.jp" class="email-img"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.44 12.93">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    font-size: 12px;
+                                                    font-family: Graphik-Light-Web, Graphik;
+                                                }
+
+                                                .cls-2,
+                                                .cls-3,
+                                                .cls-4,
+                                                .cls-5,
+                                                .cls-6 {
+                                                    fill: #003db6;
+                                                }
+
+                                                .cls-2 {
+                                                    letter-spacing: 0em;
+                                                }
+
+                                                .cls-4 {
+                                                    letter-spacing: -0.02em;
+                                                }
+
+                                                .cls-5 {
+                                                    letter-spacing: 0em;
+                                                }
+
+                                                .cls-6 {
+                                                    letter-spacing: 0.01em;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <g id="Layer_2" data-name="Layer 2">
+                                            <g id="Layer_1-2" data-name="Layer 1"><text class="cls-1"
+                                                    transform="translate(0 10.29)">Email: <tspan class="cls-2" x="37.01"
+                                                        y="0">S</tspan>
+                                                    <tspan class="cls-3" x="44.47" y="0">C</tspan>
+                                                    <tspan class="cls-4" x="53.23" y="0">F</tspan>
+                                                    <tspan class="cls-5" x="59.54" y="0">suppo</tspan>
+                                                    <tspan class="cls-6" x="94.73" y="0">r</tspan>
+                                                    <tspan class="cls-5" x="99.3" y="0">t@us.mu</tspan>
+                                                    <tspan class="cls-4" x="148.86" y="0">f</tspan>
+                                                    <tspan class="cls-3" x="152.77" y="0">g.jp</tspan>
+                                                    <tspan x="174.26" y="0"> </tspan>
+                                                </text></g>
+                                        </g>
+                                    </svg></a>
+                                <p>Or call:</p>
+                                <p>Customer Support Toll Free:</p>
+                                <p><a href="tel:18007824082" class="link-plain">+1.800.782.4082</a>, Ext. 4</p>
+                            </div>
+                        </div>
+                    </div><!-- /row -->
+                </div><!-- /section -->
+                <div class="section" style="background: white">
+                    <div class="row default-columns">
+                        <p>* Required Fields</p>
+                        <form id="contact-form" name="contact-form" method="post">
+                            <div class="contact-row">
+                                <div class="contact-column">
+                                    <div>
+                                        <label for="contact-name">Name*</label>
+                                        <input id="contact-name" type="text" name="name" max="50" required />
+                                    </div>
+                                </div>
+                                <div class="contact-column">
+                                    <div>
+                                        <label for="contact-email">Work Email*</label>
+                                        <input id="contact-email" type="email" name="email" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-row">
+                                <div class="contact-column">
+                                    <div>
+                                        <label for="contact-job">Job Function*</label>
+                                        <input id="contact-job" type="text" name="job" required />
+                                    </div>
+                                </div>
+                                <div class="contact-column">
+                                    <div>
+                                        <label for="contact-location">Location (State, Territory, Country)*</label>
+                                        <input id="contact-location" type="text" name="location" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-row">
+                                <div class="contact-column">
+                                    <div>
+                                        <label for="contact-company">Company*</label>
+                                        <input id="contact-company" type="text" name="company" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: flex; flex-direction: row">
+                                <!-- CAPTCHA PLACEHOLDER -->
+                                <!-- <div class="captcha-box"></div>
                         <div style="padding-top: 33px">CAPTCHA</div> -->
-                        <!-- END CAPTCHA PLACEHOLDER-->
+                                <!-- END CAPTCHA PLACEHOLDER-->
+                            </div>
+                            <input class="btn submit-btn" type="submit" value="Contact Us" />
+                        </form>
+                        <img class="hidden" id="loading-gif" src="static-assets/images/ajax-loader.gif"
+                            alt="submitting form loader">
+                        <div class="hidden" id="contact-response-success"><em>Your form was submitted successfully!
+                            </em></div>
+                        <div class="hidden" id="contact-response-error"><em>There was an error submitting your form.
+                                Please try again later.</em></div>
                     </div>
-                    <input class="btn submit-btn" type="submit" value="Contact Us"/>
-                </form>
-                <img class="hidden" id="loading-gif"  src="static-assets/images/ajax-loader.gif" alt="submitting form loader">
-                <div class="hidden" id="contact-response-success"><em>Your form was submitted successfully! </em></div>
-                <div class="hidden" id="contact-response-error"><em>There was an error submitting your form. Please try again later.</em></div>
-            </div>
-        </div>
-    </div>
-</div><!-- /container-main -->
-
-<!--- Footer -->
-<div class="container container-footer">
-        <div class="row">
-            <div class="footer-block footer-links">
-                <div class="links-column column-terms">
-                    <div class="link-header">Terms of Use</div>
-                    <ul>
-                        <li><a href="https://mufgamericas.com/personal-information-protection-policy" target="_blank">Privacy and Security</a></li>
-                        <li><a href="https://mufgamericas.com/terms-and-conditions" target="_blank">Terms of Use</a></li>
-                        <li><a href="https://mufgamericas.com/usa-patriot-act" target="_blank">USA PATRIOT Act</a></li>
-                    </ul>
-                </div>
-                
-                <div class="links-column column-follow">
-                    <div class="link-header">Follow Us</div>
-                  <a class="link-linkedin" href="https://www.linkedin.com/company/mufg/" target="_blank"></a>
-                  <a class="link-twitter" href="https://twitter.com/mufgamericas" target="_blank"></a>
-                  <a class="link-youtube" href="https://www.youtube.com/channel/UCvaFF_qEJvVA3v6AXx7mfHw" target="_blank"></a>
                 </div>
             </div>
-        </div>
-        <div class="copyright-block">
-        <div class="footer-block footer-copyright">&copy; 
-              <script type="text/javascript">
-                  document.write(new Date().getFullYear());
-              </script>  Mitsubishi UFJ Financial Group, Inc. All rights reserved the MUFG logo and name is a service mark of Mitsubishi UFJ Financial Group, Inc.
-          </div>
-      </div>
-      </div>
-      
-<!-- For testing - remove before sending -->
-<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="https://code.jquery.com/jquery-migrate-1.1.0.js"></script>
-<!-- remove above script before sending -->
+        </div><!-- /container-main -->
 
-<script type="text/javascript" src="scripts/js/jquery-libs.js"></script>
-<script type="text/javascript" src="scripts/js/ub.cibo.MUFGAmericas.js"></script> 
-<script type="text/javascript" src="scripts/js/mufg.tps.custom.js" defer></script>
+        <!--- Footer -->
+        <div class="container container-footer">
+            <div class="row">
+                <div class="footer-block footer-links">
+                    <div class="links-column column-terms">
+                        <div class="link-header">Terms of Use</div>
+                        <ul>
+                            <li><a href="https://mufgamericas.com/personal-information-protection-policy"
+                                    target="_blank">Privacy and Security</a></li>
+                            <li><a href="https://mufgamericas.com/terms-and-conditions" target="_blank">Terms of Use</a>
+                            </li>
+                            <li><a href="https://mufgamericas.com/usa-patriot-act" target="_blank">USA PATRIOT Act</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="links-column column-follow">
+                        <div class="link-header">Follow Us</div>
+                        <a class="link-linkedin" href="https://www.linkedin.com/company/mufg/" target="_blank"></a>
+                        <a class="link-twitter" href="https://twitter.com/mufgamericas" target="_blank"></a>
+                        <a class="link-youtube" href="https://www.youtube.com/channel/UCvaFF_qEJvVA3v6AXx7mfHw"
+                            target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-block">
+                <div class="footer-block footer-copyright">&copy;
+                    <script type="text/javascript">
+                        document.write(new Date().getFullYear());
+                    </script> Mitsubishi UFJ Financial Group, Inc. All rights reserved the MUFG logo and name is a
+                    service mark of Mitsubishi UFJ Financial Group, Inc.
+                </div>
+            </div>
+        </div>
+
+        <!-- For testing - remove before sending -->
+        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+        <!-- remove above script before sending -->
+
+        <!-- local path to jquery - please uncomment to use-->
+        <!-- <script type=text/javascript src="../GECA/forms/js/jquery-1.9.1.min.js"></script> -->
+        <!-- /local path to jquery - please uncomment to use-->
+
+        <script>
+            // Picture element HTML5 shiv
+            document.createElement("picture");
+            $.ajax({
+                url: "/tps/user/setRegion.json",
+                type: "POST",
+                dataType: 'json',
+                data: JSON.stringify({
+                    "userRegion": "RPA"
+                }),
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader("AuthCode", "asd:sdff");
+                    xhr.setRequestHeader("Accept", "application/json");
+                    xhr.setRequestHeader("Content-Type", "application/json");
+                },
+                success: function (successData) {
+                    console.log("region is: " + successData);
+                },
+                error: function (errorData) {
+                    console.log(errorData);
+                }
+            }).then(function (response) {
+                console.log("Response from update message:- " + response);
+            });
+        </script>
+
+        <script type="text/javascript" src="scripts/js/jquery-libs.js"></script>
+        <script type="text/javascript" src="scripts/js/ub.cibo.MUFGAmericas.js"></script>
+        <script type="text/javascript" src="scripts/js/mufg.tps.custom.js" defer></script>
 </body>
 
 </html>

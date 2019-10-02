@@ -1,58 +1,61 @@
-
 <!DOCTYPE html>
 
-		<html lang="en_US">
+<html lang="en_US">
 
 <head>
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<meta name="description" content="Welcome to MUFG, a leading provider of commercial financing & leasing solutions to mid-market companies that seek to acquire and grow businesses secure equipment and manage vehicle fleets" />
+	<meta name="description"
+		content="Welcome to MUFG, a leading provider of commercial financing & leasing solutions to mid-market companies that seek to acquire and grow businesses secure equipment and manage vehicle fleets" />
 
-<meta content="987F167AE193792C0EB7F3B2CC06F7A5" name="msvalidate.01" />
+	<meta content="987F167AE193792C0EB7F3B2CC06F7A5" name="msvalidate.01" />
 
-<meta name="keywords" content="Payables financing,Invoice services,invoice financing" />
+	<meta name="keywords" content="Payables financing,Invoice services,invoice financing" />
 
-<title>MUFG Supply Chain Finance</title>
+	<title>MUFG Supply Chain Finance</title>
 
-<meta charset="UTF-8" />
+	<meta charset="UTF-8" />
 
-<meta name="title" content="Trade Payables Services" />
+	<meta name="title" content="Trade Payables Services" />
 
-<link rel="shortcut icon" href="../GECA/newtemplates/images/icons/favicon.ico" />
-		<link rel="stylesheet" type="text/css" media="all" href="../GECA/newtemplates/css/BluePrintCSS.css?v=1.3">
-               <script>var curSessionID = '9FFD1666F7FAE433ACEDA32C08B61CE0.cacmsmnode2';</script>
-              <script type=text/javascript src="../GECA/forms/js/jquery-1.9.1.min.js"></script>
-              <script>
-		      		$.ajax({
-		    			url : "/tps/user/setRegion.json",
-		    			type:"POST",
-		    			dataType: 'json',
-		    			data : JSON.stringify({"userRegion": "RPA"}),
-		    			beforeSend : function(xhr) {
-		    				xhr.setRequestHeader("AuthCode", "asd:sdff");
-		    				xhr.setRequestHeader("Accept", "application/json");
-		    				xhr.setRequestHeader("Content-Type", "application/json");
-		    			},
-		    			success : function(successData){
-		    				console.log("region is: "+ successData);
-		    			},
-		    			error : function(errorData){
-		    				console.log(errorData);
-		    			}
-		    		}).then (function(response){
-		    			console.log("Response from update message:- "+response);
-		    		});
+	<link rel="shortcut icon" href="../GECA/newtemplates/images/icons/favicon.ico" />
+	<link rel="stylesheet" type="text/css" media="all" href="../GECA/newtemplates/css/BluePrintCSS.css?v=1.3">
+	<script>
+		var curSessionID = '9FFD1666F7FAE433ACEDA32C08B61CE0.cacmsmnode2';
+	</script>
+	<script type=text/javascript src="../GECA/forms/js/jquery-1.9.1.min.js"></script>
+	<script>
+		$.ajax({
+			url: "/tps/user/setRegion.json",
+			type: "POST",
+			dataType: 'json',
+			data: JSON.stringify({
+				"userRegion": "RPA"
+			}),
+			beforeSend: function (xhr) {
+				xhr.setRequestHeader("AuthCode", "asd:sdff");
+				xhr.setRequestHeader("Accept", "application/json");
+				xhr.setRequestHeader("Content-Type", "application/json");
+			},
+			success: function (successData) {
+				console.log("region is: " + successData);
+			},
+			error: function (errorData) {
+				console.log(errorData);
+			}
+		}).then(function (response) {
+			console.log("Response from update message:- " + response);
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			$('#content').load("../copyRight.html");
+		});
+	</script>
 
-              </script>
-				<script>
-					$(document).ready(function(){
-					$('#content').load("../copyRight.html");
-					});
-				</script>
 
-	
-	</head>
+</head>
 
 <!--[if lt IE 7]>  <body class="ie ie6 lte9 lte8 lte7"> <![endif]-->
 
@@ -78,311 +81,363 @@
 
 				<ul class="user-account-menu">
 
-					<li class="alpha"><a href='contact-us.html' target='_self' onclick="track(this,'o','Contact Us User')"><span lang="">Contact Us</span></a></li>
+					<li class="alpha"><a href='contact-us.html' target='_self'
+							onclick="track(this,'o','Contact Us User')"><span lang="">Contact Us</span></a></li>
 
-						</ul>
+				</ul>
 
 				<ul class="business-type-selector">
 
-					</ul>
+				</ul>
 
 			</div>
 
-		</div>	
+		</div>
 
 		<div id="container">
 
 			<div id="header">
 
-			 <a class="product-logo" itemprop="url" href='home.html' style="text-decoration: none; font-size: 16px; color:Grey;">
+				<a class="product-logo" itemprop="url" href='home.html'
+					style="text-decoration: none; font-size: 16px; color:Grey;">
 
-          <!--img src="../GECA/newtemplates/images/ge-capital-trade-payables-services.png?blobheader=image%2Fpng" alt='GE Trade Payable Services' itemprop="logo" title='GE Trade Payable Services'-->
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>MUFG</span>
-       </a>
-       <div class="search-box">	
+					<!--img src="../GECA/newtemplates/images/ge-capital-trade-payables-services.png?blobheader=image%2Fpng" alt='GE Trade Payable Services' itemprop="logo" title='GE Trade Payable Services'-->
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>MUFG</span>
+				</a>
+				<div class="search-box">
 
-     	<script type="text/javascript">
+					<script type="text/javascript">
+						function validate() {
 
-     	  function validate(){
+							if (/[!|@|#|$|%|^|*|(|)|+|=|-|\[|\]\\|\'|;|\/|\{|\}|\"|:|<|>|\?]+/g.test(document.getElementById(
+									"search-input").value)) {
 
-     	    if(/[!|@|#|$|%|^|*|(|)|+|=|-|\[|\]\\|\'|;|\/|\{|\}|\"|:|<|>|\?]+/g.test(document.getElementById("search-input").value)){
+								alert("Your search string contains illegal characters, please remove them and try again.");
 
-     	      alert("Your search string contains illegal characters, please remove them and try again.");
+								return false;
 
-     	      return false;
+							} else {
 
-           } else {
+								return true;
 
-            return true;
+							}
 
-           }
+						}
+					</script>
 
-         }
+					<form name="search" action="home/search.html" method="get" onSubmit="return validate();">
 
-     	</script>
+						<input class="text" id="search-input" type="text" value="Search" name="txtSearch">
 
-       <form name="search" action="home/search.html" method="get" onSubmit="return validate();">
-
-                 <input class="text" id="search-input" type="text" value="Search" name="txtSearch">
-
-			   		<a id="search-button" href='javascript:document.search.submit()' onClick="return validate();">Search</a>
+						<a id="search-button" href='javascript:document.search.submit()'
+							onClick="return validate();">Search</a>
 
 					</form>
 
-				</div>				
-        <ul class="primary-nav">
+				</div>
+				<ul class="primary-nav">
 
 					<li>
 
-							<a href='home.html' class="selected"  target='_self'>
+						<a href='home.html' class="selected" target='_self'>
 
-								<span  lang="">Home</span></a>
+							<span lang="">Home</span></a>
 
-						</li>
-
-					<li>
-
-							<a href='overview.html'  target='_self' >
-
-								<span  lang="">Overview</span></a>
-
-						</li>
+					</li>
 
 					<li>
 
-							<a href='security.html'  target='_self' >
+						<a href='overview.html' target='_self'>
 
-								<span  lang="">Security</span></a>
+							<span lang="">Overview</span></a>
 
-						</li>
-
-					<li>
-
-							<a href='enroll.html'  target='_self' >
-
-								<span  lang="">Enroll</span></a>
-
-						</li>
+					</li>
 
 					<li>
 
-							<a href='contact-us.html'  target='_self' >
+						<a href='security.html' target='_self'>
 
-								<span  lang="">Contact Us</span></a>
+							<span lang="">Security</span></a>
 
-						</li>
+					</li>
 
-					</ul>
+					<li>
+
+						<a href='enroll.html' target='_self'>
+
+							<span lang="">Enroll</span></a>
+
+					</li>
+
+					<li>
+
+						<a href='contact-us.html' target='_self'>
+
+							<span lang="">Contact Us</span></a>
+
+					</li>
+
+				</ul>
 
 			</div>
 
-	<div class="page-content">
+			<div class="page-content">
 
-                <!--                  -->
+				<!--                  -->
 
-		<!-- include breadcrumbs -->
+				<!-- include breadcrumbs -->
 
-		<div class="grid-9 alpha main-col">
+				<div class="grid-9 alpha main-col">
 
-			<div id="m1" class="hero hero-opt1 carousel-module grid-9 module">
-			<div class="hero-stage carousel-stage">
-				<div class="hero-item carousel-item">
-						<img src='../GECA/newtemplates/images/hero-afglobal-carousel1.jpg?blobheader=image%2Fjpeg' alt='Improving your cash flow' title='Improving your cash flow' />
-						<div class="hero-text-area">
-							<p> </p>
+					<div id="m1" class="hero hero-opt1 carousel-module grid-9 module">
+						<div class="hero-stage carousel-stage">
+							<div class="hero-item carousel-item">
+								<img src='../GECA/newtemplates/images/hero-afglobal-carousel1.jpg?blobheader=image%2Fjpeg'
+									alt='Improving your cash flow' title='Improving your cash flow' />
+								<div class="hero-text-area">
+									<p> </p>
+								</div>
+							</div>
+							<div class="hero-item carousel-item">
+								<img src='../GECA/newtemplates/images/hero-cassavant-carousel2.jpg?blobheader=image%2Fjpeg'
+									alt='Reinvesting back into your company'
+									title='Reinvesting back into your company' />
+								<div class="hero-text-area">
+									<p> </p>
+								</div>
+							</div>
+							<div class="hero-item carousel-item">
+								<img src='../GECA/newtemplates/images/hero-numerical-carousel3.jpg?blobheader=image%2Fjpeg'
+									alt='Increased payment efficiency' title='Increased payment efficiency' />
+								<div class="hero-text-area">
+									<p> </p>
+								</div>
+							</div>
+							<div class="hero-item carousel-item">
+								<img src='../GECA/newtemplates/images/hero-plexus-carousel4.jpg?blobheader=image%2Fjpeg'
+									alt='Strategic Returns on Capital ' title='Strategic Returns on Capital ' />
+								<div class="hero-text-area">
+									<p> </p>
+								</div>
+							</div>
+							<div class="hero-item carousel-item">
+								<img src='../GECA/newtemplates/images/hero-sebago-carousel5.jpg?blobheader=image%2Fjpeg'
+									alt='Maximizes Opportunities' title='Maximizes Opportunities' />
+								<div class="hero-text-area">
+									<p> </p>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="hero-item carousel-item">
-						<img src='../GECA/newtemplates/images/hero-cassavant-carousel2.jpg?blobheader=image%2Fjpeg' alt='Reinvesting back into your company' title='Reinvesting back into your company' />
-						<div class="hero-text-area">
-							<p> </p>
-						</div>
-					</div>
-					<div class="hero-item carousel-item">
-						<img src='../GECA/newtemplates/images/hero-numerical-carousel3.jpg?blobheader=image%2Fjpeg' alt='Increased payment efficiency' title='Increased payment efficiency' />
-						<div class="hero-text-area">
-							<p> </p>
-						</div>
-					</div>
-					<div class="hero-item carousel-item">
-						<img src='../GECA/newtemplates/images/hero-plexus-carousel4.jpg?blobheader=image%2Fjpeg' alt='Strategic Returns on Capital ' title='Strategic Returns on Capital ' />
-						<div class="hero-text-area">
-							<p> </p>
-						</div>
-					</div>
-					<div class="hero-item carousel-item">
-						<img src='../GECA/newtemplates/images/hero-sebago-carousel5.jpg?blobheader=image%2Fjpeg' alt='Maximizes Opportunities' title='Maximizes Opportunities' />
-						<div class="hero-text-area">
-							<p> </p>
-						</div>
-					</div>
-					</div>
-			<div class="hero-nav">
-				<div class="hero-nav-menu">
-					<a href="#" class="left-nav-button">Left</a> 
-					<span class="nav-status"><span>1</span>/5</span>
-					<a href="#" class="right-nav-button">Right</a>
-				</div>
-				<div class="hero-descriptions" style="width: 555px;">
-					<span class="hero-desc active">
-									<span class="hero-desc-text">"MUFG provided a solution with a personable hands-on approach. The result has been an improved cash-flow through earlier and predictable invoice payments" - AF Global</span>
+						<div class="hero-nav">
+							<div class="hero-nav-menu">
+								<a href="#" class="left-nav-button">Left</a>
+								<span class="nav-status"><span>1</span>/5</span>
+								<a href="#" class="right-nav-button">Right</a>
+							</div>
+							<div class="hero-descriptions" style="width: 555px;">
+								<span class="hero-desc active">
+									<span class="hero-desc-text">"MUFG provided a solution with a personable hands-on
+										approach. The result has been an improved cash-flow through earlier and
+										predictable invoice payments" - AF Global</span>
 									<span class="hero-desc-valign"></span>
 								</span>
 								<span class="hero-desc">
-									<span class="hero-desc-text">"Teaming up with GE gave us an immediate increase in cash flow allowing us to manage and re-invest back into our company" - Cassavant Machining Inc.</span>
+									<span class="hero-desc-text">"Teaming up with GE gave us an immediate increase in
+										cash flow allowing us to manage and re-invest back into our company" - Cassavant
+										Machining Inc.</span>
 									<span class="hero-desc-valign"></span>
 								</span>
-							<span class="hero-desc">
-									<span class="hero-desc-text">"GE allowed our company to complete projects without borrowing and enabled us to pay our suppliers on time and keep everyone happy" - Numerical Precision, Inc.</span>
+								<span class="hero-desc">
+									<span class="hero-desc-text">"GE allowed our company to complete projects without
+										borrowing and enabled us to pay our suppliers on time and keep everyone happy" -
+										Numerical Precision, Inc.</span>
 									<span class="hero-desc-valign"></span>
 								</span>
-							<span class="hero-desc">
-									<span class="hero-desc-text">"MUFG provides a strategy that furthers our ability to achieve a return on capital employed which meets our overall goal" - Plexus Corp</span>
+								<span class="hero-desc">
+									<span class="hero-desc-text">"MUFG provides a strategy that furthers our ability to
+										achieve a return on capital employed which meets our overall goal" - Plexus
+										Corp</span>
 									<span class="hero-desc-valign"></span>
 								</span>
-							<span class="hero-desc">
-									<span class="hero-desc-text">"The rapid payment that MUFG provides minimizes the need to borrow and maximizes our ability to take advantage of our suppliers' terms" - Sebago Energy</span>
+								<span class="hero-desc">
+									<span class="hero-desc-text">"The rapid payment that MUFG provides minimizes the
+										need to borrow and maximizes our ability to take advantage of our suppliers'
+										terms" - Sebago Energy</span>
 									<span class="hero-desc-valign"></span>
 								</span>
 							</div>
-			</div>
-		</div>
-		<!-- Begin M19 Article Header Module -->
-		<div class="module article-header-img">
-			<h1>Accelerated Payments, Accelerated Business</h1>
-					<p>
-	For over 20 years, MUFG Supply Chain Finance, has been a leading provider in supply chain finance and provides liquidity across a diverse set of industries.</p>
-<p>
-	With over 30,000 suppliers participating in its accelerated payment programs, we have a proven track record of helping our customers with faster invoice payments, improved financial metrics, forecasting and invoice reconciliation.</p>
-<a href='overview.html' title='Learn More' class="action-link" target='_self' onClick="track(this,'o','GSTAlias TPS Site')">Learn More</a>		
+						</div>
+					</div>
+					<!-- Begin M19 Article Header Module -->
+					<div class="module article-header-img">
+						<h1>Accelerated Payments, Accelerated Business</h1>
+						<p>
+							For over 20 years, MUFG Supply Chain Finance, has been a leading provider in supply chain
+							finance and provides liquidity across a diverse set of industries.</p>
+						<p>
+							With over 30,000 suppliers participating in its accelerated payment programs, we have a
+							proven track record of helping our customers with faster invoice payments, improved
+							financial metrics, forecasting and invoice reconciliation.</p>
+						<a href='overview.html' title='Learn More' class="action-link" target='_self'
+							onClick="track(this,'o','GSTAlias TPS Site')">Learn More</a>
+					</div>
+					<!-- End M19 Article Header Module -->
 				</div>
-		<!-- End M19 Article Header Module -->
-	</div>
 
-		<div class="grid-3 omega right-col">
+				<div class="grid-3 omega right-col">
 
-			<!-- Begin M5 Section Tout Module -->
-		<div class="module tout" style='padding: 10px; background-color: #9DB9DC;'>
-			<h3>Login</h3>
-			<p>
-	Manage all your MUFG Supply Chain Finance online transactions through Service Center Links.</p>
+					<!-- Begin M5 Section Tout Module -->
+					<div class="module tout" style='padding: 10px; background-color: #9DB9DC;'>
+						<h3>Login</h3>
+						<p>
+							Manage all your MUFG Supply Chain Finance online transactions through Service Center Links.
+						</p>
 
-<p>
-	<!-- <a class="action-link email" href="/tps/portal/TradepayablesPortal?START=TRUE">Login</a></p> -->
-	<a class="action-link" href="/tps2/html/authentication/userSecurity.html#/login">Login</a></p>
-<p>
-	<a href="/tps2/html/authentication/userSecurity.html#/forgotPassword">Forgot Password</a><br />
-	<a href="/tps2/html/authentication/userSecurity.html#/register">Register and Activate</a><br />
-	<a href="/tps2/html/authentication/userSecurity.html#/changePassword">Reset Password</a></p>
-<p>
-	&nbsp;</p>
-</div>
-	<!-- Begin M5 Section Tout Module -->
-		<div class="module tout" style='padding: 10px; background-color: #C4D5EA;'>
-			<h3>Enroll</h3>
-			<p>
-	Quickly Enroll both MUFG and non-MUFG Suppliers online with our simple enrollment form.</p>
-<a href='enroll.html' class='action-link' title='Enroll' onClick="track(this,'o','Enroll Page Link')">Learn More</a>
+						<p>
+							<!-- <a class="action-link email" href="/tps/portal/TradepayablesPortal?START=TRUE">Login</a></p> -->
+							<a class="action-link" href="/tps2/html/authentication/userSecurity.html#/login">Login</a>
+						</p>
+						<p>
+							<a href="/tps2/html/authentication/userSecurity.html#/forgotPassword">Forgot
+								Password</a><br />
+							<a href="/tps2/html/authentication/userSecurity.html#/register">Register and
+								Activate</a><br />
+							<a href="/tps2/html/authentication/userSecurity.html#/changePassword">Reset Password</a></p>
+						<p>
+							&nbsp;</p>
 					</div>
-	<!-- Begin M5 Section Tout Module -->
-		<div class="module tout" style='padding: 10px; background-color: #EBF1F8;'>
-			<h3>Security</h3>
-			<p>
-	Learn more about the steps we take to protect your information, and what you can do to protect yourself.</p>
-<a href='security.html' class='action-link' title='Security' onClick="track(this,'o','Security Page Link')">Learn More</a>
+					<!-- Begin M5 Section Tout Module -->
+					<div class="module tout" style='padding: 10px; background-color: #C4D5EA;'>
+						<h3>Enroll</h3>
+						<p>
+							Quickly Enroll both MUFG and non-MUFG Suppliers online with our simple enrollment form.</p>
+						<a href='enroll.html' class='action-link' title='Enroll'
+							onClick="track(this,'o','Enroll Page Link')">Learn More</a>
 					</div>
-	</div>
+					<!-- Begin M5 Section Tout Module -->
+					<div class="module tout" style='padding: 10px; background-color: #EBF1F8;'>
+						<h3>Security</h3>
+						<p>
+							Learn more about the steps we take to protect your information, and what you can do to
+							protect yourself.</p>
+						<a href='security.html' class='action-link' title='Security'
+							onClick="track(this,'o','Security Page Link')">Learn More</a>
+					</div>
+				</div>
 
-	</div>
+			</div>
 
-	<div id="footer">
-      <div class="section-nav">
-				<ul class='alpha grid-2'>
-		          		<li class="title">
-		          		  Overview</li>
-		           		<li>
-                       <a href='overview/faqs.html' onclick="track(this,'o','FAQs Footer')" target='_self'><span lang="">FAQs</span></a>
-                        </li>
-		           		<li>
-                       <a href='overview/glossary.html' onclick="track(this,'o','Glossary Footer')" target='_self'><span lang="">Glossary</span></a>
-                        </li>
-		           		</ul>
-	           		<ul class='grid-2'>
-		          		<li class="title">
-		          		  Security</li>
-		           		<li>
-                       <a href='security/how-we-protect-your-information.html' onclick="track(this,'o','How We Protect Your Information Footer')" target='_self'><span lang="">How We Protect Your Information</span></a>
-                        </li>
-		           		<li>
-                       <a href='security/log-in-recommendations.html' onclick="track(this,'o','Login Recommendations Footer')" target='_self'><span lang="">Log In Recommendations</span></a>
-                        </li>
-		           		<li>
-                       <a href='security/additional-resources.html' onclick="track(this,'o','Additional Resources Footer')" target='_self'><span lang="">Additional Resources</span></a>
-                        </li>
-		           		<li>
-                       <a href='security/general-recommendations.html' onclick="track(this,'o','General Recommendations Footer')" target='_self'><span lang="">General Recommendations</span></a>
-                        </li>
-		           		</ul>
-	           		<ul class='grid-2'>
-		          		<li class="title">
-		          		  <a href='enroll.html' onclick="track(this,'o','Enroll Footer')" target='_self'><span lang="">Enroll</span></a>
-                        </li>
-		           		</ul>
-	           		<ul class='grid-2'>
-		          		<li class="title">
-		          		  <a href='contact-us.html' onclick="track(this,'o','Contact Us Footer')" target='_self'><span lang="">Contact Us</span></a>
-                        </li>
-		           		</ul>
-	           		</div>
-	        <ul class="social-nav">
-				        <li><a class="youtube" href='http://www.youtube.com/user/gecapital' onclick="track(this,'e','YouTube')" target="_blank">You Tube</a></li>
-				      <li><a class="linkedin" href='http://www.linkedin.com/company/gecapital' onclick="track(this,'e','LinkedIn')" target="_blank">LinkedIn</a></li>
-				      <li><a class="twitter" href='http://twitter.com/gelendlease' onclick="track(this,'e','Twitter')" target="_blank">Twitter</a></li>
-				     </ul>
-			<!-- <div class="copyright">&copy;2018 General Electric Company</div> -->
-			
-			<ul class="tertiary-nav">
-				<li class="alpha">
-					<a href='http://www.ge.com/' onclick="track(this,'e','GE.com')" target='_blank'><span lang="">GE</span></a>
+			<div id="footer">
+				<div class="section-nav">
+					<ul class='alpha grid-2'>
+						<li class="title">
+							Overview</li>
+						<li>
+							<a href='overview/faqs.html' onclick="track(this,'o','FAQs Footer')" target='_self'><span
+									lang="">FAQs</span></a>
+						</li>
+						<li>
+							<a href='overview/glossary.html' onclick="track(this,'o','Glossary Footer')"
+								target='_self'><span lang="">Glossary</span></a>
+						</li>
+					</ul>
+					<ul class='grid-2'>
+						<li class="title">
+							Security</li>
+						<li>
+							<a href='security/how-we-protect-your-information.html'
+								onclick="track(this,'o','How We Protect Your Information Footer')" target='_self'><span
+									lang="">How We Protect Your Information</span></a>
+						</li>
+						<li>
+							<a href='security/log-in-recommendations.html'
+								onclick="track(this,'o','Login Recommendations Footer')" target='_self'><span
+									lang="">Log In Recommendations</span></a>
+						</li>
+						<li>
+							<a href='security/additional-resources.html'
+								onclick="track(this,'o','Additional Resources Footer')" target='_self'><span
+									lang="">Additional Resources</span></a>
+						</li>
+						<li>
+							<a href='security/general-recommendations.html'
+								onclick="track(this,'o','General Recommendations Footer')" target='_self'><span
+									lang="">General Recommendations</span></a>
+						</li>
+					</ul>
+					<ul class='grid-2'>
+						<li class="title">
+							<a href='enroll.html' onclick="track(this,'o','Enroll Footer')" target='_self'><span
+									lang="">Enroll</span></a>
+						</li>
+					</ul>
+					<ul class='grid-2'>
+						<li class="title">
+							<a href='contact-us.html' onclick="track(this,'o','Contact Us Footer')" target='_self'><span
+									lang="">Contact Us</span></a>
+						</li>
+					</ul>
+				</div>
+				<ul class="social-nav">
+					<li><a class="youtube" href='http://www.youtube.com/user/gecapital'
+							onclick="track(this,'e','YouTube')" target="_blank">You Tube</a></li>
+					<li><a class="linkedin" href='http://www.linkedin.com/company/gecapital'
+							onclick="track(this,'e','LinkedIn')" target="_blank">LinkedIn</a></li>
+					<li><a class="twitter" href='http://twitter.com/gelendlease' onclick="track(this,'e','Twitter')"
+							target="_blank">Twitter</a></li>
+				</ul>
+				<!-- <div class="copyright">&copy;2018 General Electric Company</div> -->
+
+				<ul class="tertiary-nav">
+					<li class="alpha">
+						<a href='http://www.ge.com/' onclick="track(this,'e','GE.com')" target='_blank'><span
+								lang="">GE</span></a>
 					</li>
-				<li>
-					<a href='http://www.gecapital.com' onclick="track(this,'e','GECapital.com')" target='_blank'><span lang="">GE Capital</span></a>
+					<li>
+						<a href='http://www.gecapital.com' onclick="track(this,'e','GECapital.com')"
+							target='_blank'><span lang="">GE Capital</span></a>
 					</li>
-				<li>
-					<a href='http://www.americas.gecapital.com' onclick="track(this,'e','GECapitalAmericas.com')" target='_blank'><span lang="">GE Capital Americas</span></a>
+					<li>
+						<a href='http://www.americas.gecapital.com' onclick="track(this,'e','GECapitalAmericas.com')"
+							target='_blank'><span lang="">GE Capital Americas</span></a>
 					</li>
-				<li>
-					<a href='home/privacy-statement.html' onclick="track(this,'o','Privacy')" target='_self'><span lang="">Privacy</span></a>
+					<li>
+						<a href='home/privacy-statement.html' onclick="track(this,'o','Privacy')" target='_self'><span
+								lang="">Privacy</span></a>
 					</li>
-				<li>
-					<a href='http://www.ge.com/accessibility.html' onclick="track(this,'e','Accessibility')" target='_blank'><span lang="">Accessibility</span></a>
+					<li>
+						<a href='http://www.ge.com/accessibility.html' onclick="track(this,'e','Accessibility')"
+							target='_blank'><span lang="">Accessibility</span></a>
 					</li>
-				<li>
-					<a href='home/terms.html' onclick="track(this,'o','Terms')" target='_self'><span lang="">Terms</span></a>
+					<li>
+						<a href='home/terms.html' onclick="track(this,'o','Terms')" target='_self'><span
+								lang="">Terms</span></a>
 					</li>
-				<li>
-					<a href='home/legal-statement.html' onclick="track(this,'o','Legal Statement')" target='_self'><span lang="">Legal Statement</span></a>
+					<li>
+						<a href='home/legal-statement.html' onclick="track(this,'o','Legal Statement')"
+							target='_self'><span lang="">Legal Statement</span></a>
 					</li>
-				<li>
-					<a href='home/sitemap.html' onclick="track(this,'o','Sitemap')" target='_self'><span lang="">Sitemap</span></a>
+					<li>
+						<a href='home/sitemap.html' onclick="track(this,'o','Sitemap')" target='_self'><span
+								lang="">Sitemap</span></a>
 					</li>
 				</ul>
-        </div>
-	</div>
+			</div>
+		</div>
 
 	</div>
 
 	<script type="text/javascript" src="../GECA/newtemplates/js/video_player/modernizr-1.6.min.js"></script>
-    <script type="text/javascript" src="../GECA/newtemplates/js/scripts.js?v=1.81"></script>
-                <script type="text/javascript" src="../GECA/newtemplates/js/video_player/videocall.js"></script>
-		<!-- SiteCatalyst code version: H.20.3.
+	<script type="text/javascript" src="../GECA/newtemplates/js/scripts.js?v=1.81"></script>
+	<script type="text/javascript" src="../GECA/newtemplates/js/video_player/videocall.js"></script>
+	<!-- SiteCatalyst code version: H.20.3.
 		Copyright 1996-2010 Adobe, Inc. All Rights Reserved
 		More info available at http://www.omniture.com -->
-		<script type="text/javascript" >
-			var s_account='gelendingdevtradepayables'
-		</script>
-		<script type="text/javascript" src="../javascript/s_code.js"></script>
-		<script type="text/javascript"><!--
+	<script type="text/javascript">
+		var s_account = 'gelendingdevtradepayables'
+	</script>
+	<script type="text/javascript" src="../javascript/s_code.js"></script>
+	<script type="text/javascript"><!--
 		/* You may give each page an identifying name, server, and channel on
 		the next lines. */
 		

@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,39 +12,20 @@
     <meta name="description" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-     <!-- Page styles -->
+    <!-- Page styles -->
     <link rel="stylesheet" href="static-assets/css/main.css">
-    <script type=text/javascript src="../GECA/forms/js/jquery-1.9.1.min.js"></script>
-     <!-- Picturefill -->
-     <script>
-            // Picture element HTML5 shiv
-            document.createElement( "picture" );
-            $.ajax({
-                url : "/tps/user/setRegion.json",
-                type:"POST",
-                dataType: 'json',
-                data : JSON.stringify({"userRegion": "RPA"}),
-                beforeSend : function(xhr) {
-                    xhr.setRequestHeader("AuthCode", "asd:sdff");
-                    xhr.setRequestHeader("Accept", "application/json");
-                    xhr.setRequestHeader("Content-Type", "application/json");
-                },
-                success : function(successData){
-                    console.log("region is: "+ successData);
-                },
-                error : function(errorData){
-                    console.log(errorData);
-                }
-            }).then (function(response){
-                console.log("Response from update message:- "+response);
-            });
-        </script>
+    <!-- Picturefill -->
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement("picture")
+    </script>
     <script type="text/javascript" src="scripts/js/picturefill.js" async></script>
 </head>
+
 <body class="category">
 
-<!-- Header -->
-<div class="container-global">
+    <!-- Header -->
+    <div class="container-global">
 
         <div class="container-mobile-nav">
             <div class="mobile-nav-header">
@@ -51,9 +33,12 @@
                 <div class="mobile-nav-close"></div>
             </div>
             <div class="mobile-nav-links">
-                <a class="nav-link nav-group-link nav-group-link-hover" data-group="who-we-are" href="who-we-are.html">Who We Are</a>
-                <a class="nav-link nav-group-link nav-group-link-hover" data-group="what-we-do" href="what-we-do.html">What We Do</a>
-                <a class="nav-link nav-group-link nav-group-link-hover" data-group="activate-login" href="index.html#login-anchor-mobile">Register / Login</a>
+                <a class="nav-link nav-group-link nav-group-link-hover" data-group="who-we-are"
+                    href="who-we-are.html">Who We Are</a>
+                <a class="nav-link nav-group-link nav-group-link-hover" data-group="what-we-do"
+                    href="what-we-do.html">What We Do</a>
+                <a class="nav-link nav-group-link nav-group-link-hover" data-group="activate-login"
+                    href="index.html#login-anchor-mobile">Register / Login</a>
                 <a class="nav-link nav-group-link" data-group="contact-us" href="contact-us.html">Contact Us</a>
 
             </div>
@@ -65,8 +50,10 @@
                 </div>
                 <div class="nav-group" data-group="what-we-do">
                     <a class="nav-link overview-link" href="what-we-do.html">What We Do</a>
-                    <a href="what-we-do.html#what-supply-chain-finance" class="nav-link">What is Supply Chain Finance</a>
-                    <a href="what-we-do.html#how-supply-chain-finance" class="nav-link">How Supply Chain Finance Works for You</a>
+                    <a href="what-we-do.html#what-supply-chain-finance" class="nav-link">What is Supply Chain
+                        Finance</a>
+                    <a href="what-we-do.html#how-supply-chain-finance" class="nav-link">How Supply Chain Finance Works
+                        for You</a>
                     <a href="what-we-do.html#benefits-buyers" class="nav-link">Benefits for Buyers</a>
                     <a href="what-we-do.html#benefits-suppliers" class="nav-link">Benefits for Suppliers</a>
                     <a href="what-we-do.html#faq" class="nav-link">Frequently Asked Questions</a>
@@ -75,25 +62,29 @@
                     <p>MUFG SCF Program Participant:</p>
                     <a href="/tps2/html/authentication/userSecurity.html#/register" class="nav-link">Register</a>
                     <a href="/tps2/html/authentication/userSecurity.html#/login" class="nav-link">Login</a>
-                    <a href="/tps2/html/authentication/userSecurity.html#/forgotPassword" class="nav-link">Forgot Password</a>
-                    <a href="/tps2/html/authentication/userSecurity.html#/changePassword" class="nav-link">Reset Password</a>
+                    <a href="/tps2/html/authentication/userSecurity.html#/forgotPassword" class="nav-link">Forgot
+                        Password</a>
+                    <a href="/tps2/html/authentication/userSecurity.html#/changePassword" class="nav-link">Reset
+                        Password</a>
                 </div>
             </div>
         </div>
-    
+
         <div class="container-scroll">
             <div class="container container-header">
                 <div class="row main-nav">
-                    <div class="mobile-nav-open"><div class="menu-icon"></div></div>
+                    <div class="mobile-nav-open">
+                        <div class="menu-icon"></div>
+                    </div>
                     <a class="logo" href="index.html"><img src="static-assets/images/logo-mufg.png" alt="MUFG logo"></a>
                     <div class="region-label">Supply Chain Finance</div>
                     <div class="header-border"></div>
                     <div class="main-nav-links">
-                            <a class="nav-link nav-link-hover" data-group="who-we-are" href="who-we-are.html">Who We Are</a>
-                            <a class="nav-link nav-link-hover" data-group="what-we-do" href="what-we-do.html">What We Do</a>
-                            <span class="nav-link nav-link-hover" data-group="activate-login">Register / Login</span>
-                            <a class="nav-link" data-group="contact-us" href="contact-us.html">Contact Us</a>
-                        </div>
+                        <a class="nav-link nav-link-hover" data-group="who-we-are" href="who-we-are.html">Who We Are</a>
+                        <a class="nav-link nav-link-hover" data-group="what-we-do" href="what-we-do.html">What We Do</a>
+                        <span class="nav-link nav-link-hover" data-group="activate-login">Register / Login</span>
+                        <a class="nav-link" data-group="contact-us" href="contact-us.html">Contact Us</a>
+                    </div>
                 </div><!-- /row -->
                 <div class="main-sub-nav">
                     <div class="row">
@@ -107,7 +98,8 @@
                                 <div class="row inner-row">
                                     <div class="group-links-column">
                                         <a href="who-we-are.html#mufg-americas" class="sub-nav-link">MUFG Americas</a>
-                                        <a href="who-we-are.html#mufg-supply-chain-finance" class="sub-nav-link">MUFG Supply Chain Finance</a>
+                                        <a href="who-we-are.html#mufg-supply-chain-finance" class="sub-nav-link">MUFG
+                                            Supply Chain Finance</a>
                                     </div>
                                 </div>
                             </div>
@@ -121,11 +113,15 @@
                                 </div>
                                 <div class="row inner-row">
                                     <div class="group-links-column">
-                                        <a href="what-we-do.html#what-supply-chain-finance" class="sub-nav-link">What is Supply Chain Finance</a>
-                                        <a href="what-we-do.html#how-supply-chain-finance" class="sub-nav-link">How Supply Chain Finance Works for You</a>
+                                        <a href="what-we-do.html#what-supply-chain-finance" class="sub-nav-link">What is
+                                            Supply Chain Finance</a>
+                                        <a href="what-we-do.html#how-supply-chain-finance" class="sub-nav-link">How
+                                            Supply Chain Finance Works for You</a>
                                         <a href="what-we-do.html#benefits" class="sub-nav-link">Benefits for Buyers</a>
-                                        <a href="what-we-do.html#benefits" class="sub-nav-link">Benefits for Suppliers</a>
-                                        <a href="what-we-do.html#faq" class="sub-nav-link">Frequently Asked Questions</a>
+                                        <a href="what-we-do.html#benefits" class="sub-nav-link">Benefits for
+                                            Suppliers</a>
+                                        <a href="what-we-do.html#faq" class="sub-nav-link">Frequently Asked
+                                            Questions</a>
                                     </div>
                                 </div>
                             </div>
@@ -141,10 +137,14 @@
                                     <div class="group-links-column">
                                         <p class="sub-nav-title">MUFG SCF Program Participant</p>
                                         <div class="sub-nav-link">
-                                            <a href="/tps2/html/authentication/userSecurity.html#/register" class="btn login">Register</a>
-                                            <a href="/tps2/html/authentication/userSecurity.html#/login" class="btn login">Login</a>
-                                            <a href="/tps2/html/authentication/userSecurity.html#/forgotPassword" class="btn login">Forgot Password</a>
-                                            <a href="/tps2/html/authentication/userSecurity.html#/changePassword" class="btn login">Reset Password</a>
+                                            <a href="/tps2/html/authentication/userSecurity.html#/register"
+                                                class="btn login">Register</a>
+                                            <a href="/tps2/html/authentication/userSecurity.html#/login"
+                                                class="btn login">Login</a>
+                                            <a href="/tps2/html/authentication/userSecurity.html#/forgotPassword"
+                                                class="btn login">Forgot Password</a>
+                                            <a href="/tps2/html/authentication/userSecurity.html#/changePassword"
+                                                class="btn login">Reset Password</a>
                                         </div>
                                     </div>
                                 </div>
@@ -155,123 +155,175 @@
             </div><!-- /container-header -->
         </div><!-- /container-scroll -->
 
-<div class="container container-content">
-    <div class="content-header">
-        <div class="page-banner">
-            <div class="title-position">
-                <div class="title-display">
-                    <div class="title-container">
-                        <h1>Who We Are</h1>
+        <div class="container container-content">
+            <div class="content-header">
+                <div class="page-banner">
+                    <div class="title-position">
+                        <div class="title-display">
+                            <div class="title-container">
+                                <h1>Who We Are</h1>
+                            </div>
+                        </div>
                     </div>
+                    <picture>
+                        <source srcset="static-assets/images/Who-We-Are-Large.jpg" media="(min-width: 768px)">
+                        <img srcset="static-assets/images/Who-We-Are-Small.jpg" alt="people working together">
+                    </picture>
                 </div>
-            </div>
-            <picture>
-                <source srcset="static-assets/images/Who-We-Are-Large.jpg" media="(min-width: 768px)">
-                <img srcset="static-assets/images/Who-We-Are-Small.jpg" alt="people working together">
-            </picture>
-        </div>
-        <div class="row">
-            <div class="utility-modules">
-                <div class="column-main breadcrumb">
-                    <a class="breadcrumb-link" href="index.html">Supply Chain Finance</a>
-                    <span class="breadcrumb-current">Who We Are</span>
-                </div>
-            </div>
-        </div><!-- /row -->
-    </div><!-- /content-header -->
-    <div class="content-sections">
-        <div class="section section-main">
-            <div class="row seven-five">
-                <div class="column-main">
-                    
-                    <div class="row inner-row">
-                        <div class="column-module">
-                            <p>Mitsubishi UFJ Financial Group (MUFG) is a Top 5 Global Corporate Bank<sup>1</sup> and Japan’s largest financial institution with total assets of $2.8 trillion<sup>2</sup>, a $70 billion market capitalization<sup>3</sup>, and 150,000 employees in 450 locations in more than 50 countries around the world.</p>
-                            <p>In the United States, we’re 13,000 employees strong, working together to positively impact every client, organization, and community we serve. Leveraging the strength of the financial group, we provide comprehensive solutions, global perspective, and specialized industry coverage.</p>
-                            <p>As a trusted provider to corporations large and small, we build relationships with our clients that align with your business objectives and provide solutions that allow you to maximize your working capital.</p>
-                            <ul class="list-plain">
-                                <li><sup>1</sup> S&P Capital IQ as of August 2019</li>
-                                <li><sup>2</sup> Exchange rate of 1 USD  =  &#165;111.0 as of December 28, 2018</li>
-                                <li><sup>3</sup> Market Capitalization as of March 27, 2019</li>
-                            </ul>
-                      </div>  
+                <div class="row">
+                    <div class="utility-modules">
+                        <div class="column-main breadcrumb">
+                            <a class="breadcrumb-link" href="index.html">Supply Chain Finance</a>
+                            <span class="breadcrumb-current">Who We Are</span>
+                        </div>
                     </div>
-                </div>
-                <div class="column-side media">
-                    <img src="static-assets/images/image-4.png" alt="two business people walking and talking together">
-                </div>
-            </div><!-- /row -->
-        <div class="section" id="mufg-americas">
-            <div class="row seven-five">
-                <div class="column-main media"style="background-color: #f6f6f6">
-                    <img src="static-assets/images/image-5.png" alt="american flag and mufg flag"/>
-                </div>
-                <div class="column-side">
-                    <div class="column-module" style="background-color: #f6f6f6">
-                        <h3>MUFG Americas</h3>
-                        <p></p>
-                        <p>We invite you to learn more about MUFG in the Americas and the range of solutions and services we offer to clients:</p>
-                        <ul style="padding-bottom: 1em">
-                            <li>Corporate and Investment Banking</li>
-                            <li>Global Trust Services</li>
-                            <li>Transaction Banking</li>
-                            <li>Consumer, Wealth and Commercial Banking</li>
-                        </ul>
-                        <a href="https://mufgamericas.com" class="link-arrow" target="_blank">Learn More about MUFG Americas</a>
-                    </div>
-                </div>            
-            </div>
-        </div><!---/section-->
+                </div><!-- /row -->
+            </div><!-- /content-header -->
+            <div class="content-sections">
+                <div class="section section-main">
+                    <div class="row seven-five">
+                        <div class="column-main">
 
-   <div class="section" id="mufg-supply-chain-finance">
-       <div class="row">
-           <h3>MUFG Supply Chain Finance</h3>
-           <p></p>
-           <p>In the past decade, we have seen a convergence of the physical supply chain with the financial supply chain among our clients, not only multinational corporations, but also small- to medium-sized companies. With our long-standing industry expertise and deep understanding of the global supply chain, MUFG experts are ideally positioned to help both Buyers and Suppliers succeed in a complex business environment.</p>
-       </div>
-   </div>
-   
-</div><!-- /container-main -->
-<!--- Footer -->
-<div class="container container-footer">
-        <div class="row">
-            <div class="footer-block footer-links">
-                <div class="links-column column-terms">
-                    <div class="link-header">Terms of Use</div>
-                    <ul>
-                        <li><a href="https://mufgamericas.com/personal-information-protection-policy" target="_blank">Privacy and Security</a></li>
-                        <li><a href="https://mufgamericas.com/terms-and-conditions" target="_blank">Terms of Use</a></li>
-                        <li><a href="https://mufgamericas.com/usa-patriot-act" target="_blank">USA PATRIOT Act</a></li>
-                    </ul>
-                </div>
-                
-                <div class="links-column column-follow">
-                    <div class="link-header">Follow Us</div>
-                  <a class="link-linkedin" href="https://www.linkedin.com/company/mufg/" target="_blank"></a>
-                  <a class="link-twitter" href="https://twitter.com/mufgamericas" target="_blank"></a>
-                  <a class="link-youtube" href="https://www.youtube.com/channel/UCvaFF_qEJvVA3v6AXx7mfHw" target="_blank"></a>
-                </div>
-            </div>
-        </div>
-        <div class="copyright-block">
-        <div class="footer-block footer-copyright">&copy; 
-              <script type="text/javascript">
-                  document.write(new Date().getFullYear());
-              </script>  Mitsubishi UFJ Financial Group, Inc. All rights reserved the MUFG logo and name is a service mark of Mitsubishi UFJ Financial Group, Inc.
-          </div>
-      </div>
-      </div>
-      
-      
-</div>
- <!-- For testing - remove before sending -->
- <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
- <script src="https://code.jquery.com/jquery-migrate-1.1.0.js"></script>
- <!-- remove above script before sending -->
+                            <div class="row inner-row">
+                                <div class="column-module">
+                                    <p>Mitsubishi UFJ Financial Group (MUFG) is a Top 5 Global Corporate
+                                        Bank<sup>1</sup> and Japan’s largest financial institution with total assets of
+                                        $2.8 trillion<sup>2</sup>, a $70 billion market capitalization<sup>3</sup>, and
+                                        150,000 employees in 450 locations in more than 50 countries around the world.
+                                    </p>
+                                    <p>In the United States, we’re 13,000 employees strong, working together to
+                                        positively impact every client, organization, and community we serve. Leveraging
+                                        the strength of the financial group, we provide comprehensive solutions, global
+                                        perspective, and specialized industry coverage.</p>
+                                    <p>As a trusted provider to corporations large and small, we build relationships
+                                        with our clients that align with your business objectives and provide solutions
+                                        that allow you to maximize your working capital.</p>
+                                    <ul class="list-plain">
+                                        <li><sup>1</sup> S&P Capital IQ as of August 2019</li>
+                                        <li><sup>2</sup> Exchange rate of 1 USD = &#165;111.0 as of December 28, 2018
+                                        </li>
+                                        <li><sup>3</sup> Market Capitalization as of March 27, 2019</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column-side media">
+                            <img src="static-assets/images/image-4.png"
+                                alt="two business people walking and talking together">
+                        </div>
+                    </div><!-- /row -->
+                    <div class="section" id="mufg-americas">
+                        <div class="row seven-five">
+                            <div class="column-main media" style="background-color: #f6f6f6">
+                                <img src="static-assets/images/image-5.png" alt="american flag and mufg flag" />
+                            </div>
+                            <div class="column-side">
+                                <div class="column-module" style="background-color: #f6f6f6">
+                                    <h3>MUFG Americas</h3>
+                                    <p></p>
+                                    <p>We invite you to learn more about MUFG in the Americas and the range of solutions
+                                        and services we offer to clients:</p>
+                                    <ul style="padding-bottom: 1em">
+                                        <li>Corporate and Investment Banking</li>
+                                        <li>Global Trust Services</li>
+                                        <li>Transaction Banking</li>
+                                        <li>Consumer, Wealth and Commercial Banking</li>
+                                    </ul>
+                                    <a href="https://mufgamericas.com" class="link-arrow" target="_blank">Learn More
+                                        about MUFG Americas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---/section-->
 
-<script type="text/javascript" src="scripts/js/jquery-libs.js"></script>
-<script type="text/javascript" src="scripts/js/slick.js"></script>
-<script type="text/javascript" src="scripts/js/ub.cibo.MUFGAmericas.js"></script>
+                    <div class="section" id="mufg-supply-chain-finance">
+                        <div class="row">
+                            <h3>MUFG Supply Chain Finance</h3>
+                            <p></p>
+                            <p>In the past decade, we have seen a convergence of the physical supply chain with the
+                                financial supply chain among our clients, not only multinational corporations, but also
+                                small- to medium-sized companies. With our long-standing industry expertise and deep
+                                understanding of the global supply chain, MUFG experts are ideally positioned to help
+                                both Buyers and Suppliers succeed in a complex business environment.</p>
+                        </div>
+                    </div>
+
+                </div><!-- /container-main -->
+                <!--- Footer -->
+                <div class="container container-footer">
+                    <div class="row">
+                        <div class="footer-block footer-links">
+                            <div class="links-column column-terms">
+                                <div class="link-header">Terms of Use</div>
+                                <ul>
+                                    <li><a href="https://mufgamericas.com/personal-information-protection-policy"
+                                            target="_blank">Privacy and Security</a></li>
+                                    <li><a href="https://mufgamericas.com/terms-and-conditions" target="_blank">Terms of
+                                            Use</a></li>
+                                    <li><a href="https://mufgamericas.com/usa-patriot-act" target="_blank">USA PATRIOT
+                                            Act</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="links-column column-follow">
+                                <div class="link-header">Follow Us</div>
+                                <a class="link-linkedin" href="https://www.linkedin.com/company/mufg/"
+                                    target="_blank"></a>
+                                <a class="link-twitter" href="https://twitter.com/mufgamericas" target="_blank"></a>
+                                <a class="link-youtube" href="https://www.youtube.com/channel/UCvaFF_qEJvVA3v6AXx7mfHw"
+                                    target="_blank"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright-block">
+                        <div class="footer-block footer-copyright">&copy;
+                            <script type="text/javascript">
+                                document.write(new Date().getFullYear());
+                            </script> Mitsubishi UFJ Financial Group, Inc. All rights reserved the MUFG logo and name
+                            is a service mark of Mitsubishi UFJ Financial Group, Inc.
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- For testing - remove before sending -->
+            <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+            <script src="https://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+            <!-- remove above script before sending -->
+
+            <!-- local path to jquery - please uncomment to use-->
+            <!-- <script type=text/javascript src="../GECA/forms/js/jquery-1.9.1.min.js"></script> -->
+            <!-- /local path to jquery - please uncomment to use-->
+            <script>
+                $.ajax({
+                    url: "/tps/user/setRegion.json",
+                    type: "POST",
+                    dataType: 'json',
+                    data: JSON.stringify({
+                        "userRegion": "RPA"
+                    }),
+                    beforeSend: function (xhr) {
+                        xhr.setRequestHeader("AuthCode", "asd:sdff");
+                        xhr.setRequestHeader("Accept", "application/json");
+                        xhr.setRequestHeader("Content-Type", "application/json");
+                    },
+                    success: function (successData) {
+                        console.log("region is: " + successData);
+                    },
+                    error: function (errorData) {
+                        console.log(errorData);
+                    }
+                }).then(function (response) {
+                    console.log("Response from update message:- " + response);
+                });
+            </script>
+
+
+            <script type="text/javascript" src="scripts/js/jquery-libs.js"></script>
+            <script type="text/javascript" src="scripts/js/slick.js"></script>
+            <script type="text/javascript" src="scripts/js/ub.cibo.MUFGAmericas.js"></script>
 
 </body>
 
