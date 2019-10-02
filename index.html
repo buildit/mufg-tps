@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="static-assets/favicon.ico">
+    <link rel="shortcut icon" href="static-assets/favicon.ico?v=2">
 
     <title>MUFG Supply Chain Finance</title>
 
@@ -13,87 +13,236 @@
 
      <!-- Page styles -->
     <link rel="stylesheet" href="static-assets/css/main.css">
+    <script type=text/javascript src="../GECA/forms/js/jquery-1.9.1.min.js"></script>
+    <!-- For testing - remove before sending -->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
 
      <!-- Picturefill -->
     <script>
         // Picture element HTML5 shiv
         document.createElement( "picture" );
+        $.ajax({
+			url : "/tps/user/setRegion.json",
+			type:"POST",
+			dataType: 'json',
+			data : JSON.stringify({"userRegion": "RPA"}),
+			beforeSend : function(xhr) {
+				xhr.setRequestHeader("AuthCode", "asd:sdff");
+				xhr.setRequestHeader("Accept", "application/json");
+				xhr.setRequestHeader("Content-Type", "application/json");
+			},
+			success : function(successData){
+				console.log("region is: "+ successData);
+			},
+			error : function(errorData){
+				console.log(errorData);
+			}
+		}).then (function(response){
+			console.log("Response from update message:- "+response);
+		});
     </script>
     <script type="text/javascript" src="scripts/js/picturefill.js" async></script>
 </head>
 <body class="homepage init-carousel">
-    <!--#include file="./Header.html"-->
+  
+<!-- Header -->
+<div class="container-global">
+
+        <div class="container-mobile-nav">
+            <div class="mobile-nav-header">
+                <a class="logo" href="index.html"><img src="static-assets/images/logo-mufg.png" alt="MUFG logo"></a>
+                <div class="mobile-nav-close"></div>
+            </div>
+            <div class="mobile-nav-links">
+                <a class="nav-link nav-group-link nav-group-link-hover" data-group="who-we-are" href="who-we-are.html">Who We Are</a>
+                <a class="nav-link nav-group-link nav-group-link-hover" data-group="what-we-do" href="what-we-do.html">What We Do</a>
+                <a class="nav-link nav-group-link nav-group-link-hover" data-group="activate-login" href="index.html#login-anchor-mobile">Register / Login</a>
+                <a class="nav-link nav-group-link" data-group="contact-us" href="contact-us.html">Contact Us</a>
+
+            </div>
+            <div class="mobile-nav-secondary">
+                <div class="nav-group" data-group="who-we-are">
+                    <a class="nav-link overview-link" href="who-we-are.html">Who We Are</a>
+                    <a href="who-we-are.html#mufg-americas" class="nav-link">MUFG Americas</a>
+                    <a href="who-we-are.html#mufg-supply-chain-finance" class="nav-link">MUFG Supply Chain Finance</a>
+                </div>
+                <div class="nav-group" data-group="what-we-do">
+                    <a class="nav-link overview-link" href="what-we-do.html">What We Do</a>
+                    <a href="what-we-do.html#what-supply-chain-finance" class="nav-link">What is Supply Chain Finance</a>
+                    <a href="what-we-do.html#how-supply-chain-finance" class="nav-link">How Supply Chain Finance Works for You</a>
+                    <a href="what-we-do.html#benefits-buyers" class="nav-link">Benefits for Buyers</a>
+                    <a href="what-we-do.html#benefits-suppliers" class="nav-link">Benefits for Suppliers</a>
+                    <a href="what-we-do.html#faq" class="nav-link">Frequently Asked Questions</a>
+                </div>
+                <div class="nav-group" data-group="activate-login">
+                    <p>MUFG SCF Program Participant:</p>
+                    <a href="/tps2/html/authentication/userSecurity.html#/register" class="nav-link">Register</a>
+                    <a href="/tps2/html/authentication/userSecurity.html#/login" class="nav-link">Login</a>
+                    <a href="/tps2/html/authentication/userSecurity.html#/forgotPassword" class="nav-link">Forgot Password</a>
+                    <a href="/tps2/html/authentication/userSecurity.html#/changePassword" class="nav-link">Reset Password</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-scroll">
+            <div class="container container-header">
+                <div class="row main-nav">
+                    <div class="mobile-nav-open"><div class="menu-icon"></div></div>
+                    <a class="logo" href="index.html"><img src="static-assets/images/logo-mufg.png" alt="MUFG logo"></a>
+                    <div class="region-label">Supply Chain Finance</div>
+                    <div class="header-border"></div>
+                    <div class="main-nav-links">
+                            <a class="nav-link nav-link-hover" data-group="who-we-are" href="who-we-are.html">Who We Are</a>
+                            <a class="nav-link nav-link-hover" data-group="what-we-do" href="what-we-do.html">What We Do</a>
+                            <span class="nav-link nav-link-hover" data-group="activate-login">Register / Login</span>
+                            <a class="nav-link" data-group="contact-us" href="contact-us.html">Contact Us</a>
+                        </div>
+                </div><!-- /row -->
+                <div class="main-sub-nav">
+                    <div class="row">
+                        <div class="sub-nav-group" data-group="who-we-are">
+                            <div class="group-links">
+                                <div class="row inner-row">
+                                    <div class="group-links-column">
+                                        <a class="sub-nav-link overview-link" href="who-we-are.html">Who We Are</a>
+                                    </div>
+                                </div>
+                                <div class="row inner-row">
+                                    <div class="group-links-column">
+                                        <a href="who-we-are.html#mufg-americas" class="sub-nav-link">MUFG Americas</a>
+                                        <a href="who-we-are.html#mufg-supply-chain-finance" class="sub-nav-link">MUFG Supply Chain Finance</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-nav-group" data-group="what-we-do">
+                            <div class="group-links">
+                                <div class="row inner-row">
+                                    <div class="group-links-column">
+                                        <a class="sub-nav-link overview-link" href="what-we-do.html">What We Do</a>
+                                    </div>
+                                </div>
+                                <div class="row inner-row">
+                                    <div class="group-links-column">
+                                        <a href="what-we-do.html#what-supply-chain-finance" class="sub-nav-link">What is Supply Chain Finance</a>
+                                        <a href="what-we-do.html#how-supply-chain-finance" class="sub-nav-link">How Supply Chain Finance Works for You</a>
+                                        <a href="what-we-do.html#benefits" class="sub-nav-link">Benefits for Buyers</a>
+                                        <a href="what-we-do.html#benefits" class="sub-nav-link">Benefits for Suppliers</a>
+                                        <a href="what-we-do.html#faq" class="sub-nav-link">Frequently Asked Questions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-nav-group" data-group="activate-login">
+                            <div class="group-links two-column">
+                                <div class="row inner-row">
+                                    <div class="group-links-column">
+                                        <p class="sub-nav-title overview-link">Register/Login</p>
+                                    </div>
+                                </div>
+                                <div class="row inner-row">
+                                    <div class="group-links-column">
+                                        <p class="sub-nav-title ">MUFG SCF Program Participant</p>
+                                        <div class="sub-nav-link">
+                                            <a href="/tps2/html/authentication/userSecurity.html#/register" class="btn login">Register</a>
+                                            <a href="/tps2/html/authentication/userSecurity.html#/login" class="btn login">Login</a>
+                                            <a href="/tps2/html/authentication/userSecurity.html#/forgotPassword" class="btn login">Forgot Password</a>
+                                            <a href="/tps2/html/authentication/userSecurity.html#/changePassword" class="btn login">Reset Password</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /row -->
+                </div><!-- /main-sub-nav -->
+            </div><!-- /container-header -->
+        </div><!-- /container-scroll -->
 <div class="container container-content">
         <div class="section recent-news">
-                <div class="carousel news-carousel">
-                    <div class="news-item">
-                        <div class="inner">
-                            <a href="#" class="item-link">
-                                <div class="item-image">
-                                    <img src="static-assets/images/banner-1.png" alt="wind power">
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-title">A powerful early payment solution for Suppliers</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="news-item">
-                        <div class="inner">
-                            <a href="#" class="item-link">
-                                <div class="item-image">
-                                    <img src="static-assets/images/banner-2.png" alt="shipping containers">
-                                </div>
-                                <div class="item-text">
-                                  <div class="item-title">Turn accounts receivables into cash faster</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="news-item">
-                        <div class="inner">
-                            <a href="#" class="item-link">
-                                <div class="item-image">
-                                    <img src="static-assets/images/banner-3.png" alt="fast moving train">
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-title">Get paid faster at an attractive rate</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="news-item">
-                        <div class="inner">
-                            <a href="#" class="item-link">
-                                <div class="item-image">
-                                    <img src="static-assets/images/banner-4.png" alt="person working on their computer">
-                                </div>
-                                <div class="item-text">
-                                   <div class="item-title">Payment notification via dedicated Supplier portal</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="news-item">
-                        <div class="inner">
-                            <a href="#" class="item-link">
-                                <div class="item-image">
-                                    <img src="static-assets/images/banner-5.png" alt="two business people shaking hands">
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-title">Payment certainty to relieve short-term borrow cost & reduce credit risk</div>
-                                </div>
-                            </a>
+            <div class="carousel news-carousel">
+                <div class="news-item">
+                    <div class="inner">
+                        <div class="item-link">
+                            <div class="item-image">
+                                <picture>
+                                    <source srcset="static-assets/images/banner-1-large.jpg" media="(min-width: 768px)">
+                                    <img src="static-assets/images/banner-1-small.jpg" alt="wind power">
+                                </picture>
+                            </div>
+                            <div class="item-text-left">
+                                <h1 class="item-title">A powerful early payment solution for Suppliers</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div><!-- /section -->
+                <div class="news-item">
+                    <div class="inner">
+                        <div class="item-link">
+                            <div class="item-image">
+                                <picture>
+                                    <source srcset="static-assets/images/banner-2-large.jpg" media="(min-width: 768px)">
+                                    <img src="static-assets/images/banner-2-small.jpg" alt="shipping containers">
+                                </picture>                            </div>
+                            <div class="item-text-right">
+                                <h1 class="item-title">Turn Accounts Receivables into cash faster</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="inner">
+                        <div class="item-link">
+                            <div class="item-image">
+                                <picture>
+                                    <source srcset="static-assets/images/banner-3-large.jpg" media="(min-width: 768px)">
+                                    <img src="static-assets/images/banner-3-small.jpg" alt="fast train">
+                                </picture>                           
+                             </div>
+                            <div class="item-text-left">
+                                <h1 class="item-title">Get paid faster at an attractive rate</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="inner">
+                        <div class="item-link">
+                            <div class="item-image">
+                                 <picture>
+                                    <source srcset="static-assets/images/banner-4-large.jpg" media="(min-width: 768px)">
+                                    <img src="static-assets/images/banner-4-small.jpg" alt="two business people shaking hands">
+                                </picture>                             
+                            </div>
+                            <div class="item-text-right long-title">
+                                <h1 class="item-title">Receive payment notification via dedicated Supplier portal</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <div class="news-item">
+                    <div class="inner">
+                        <div class="item-link">
+                            <div class="item-image">
+                                <picture>
+                                    <source srcset="static-assets/images/banner-5-large.jpg" media="(min-width: 768px)">
+                                    <img src="static-assets/images/banner-5-small.jpg" alt="woman working at her computer">
+                                </picture> 
+                            </div>
+                            <div class="item-text-left long-title">
+                                <h1 class="item-title">Payment certainty to relieve short-term borrow cost & reduce credit risk</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /section -->
     <div class="section info-content">
         <div class="row two-columns">
             <div class="column-module">
                 <h2>Looking to extract value and improve your working capital?</h2>
                 <p></p>
-                <p>Find the solutions you need to reduce financing costs, improve working capital and free up liquidity in your cash conversion cycle. Allow MUFG to show you how using our powerful MUFG Supply Chain Finance Platform will benefit your business.</p>
+                <p>Find the solutions you need to reduce financing costs, improve working capital and free up liquidity in your cash conversion cycle. Allow MUFG to show you how using our powerful Supply Chain Finance Platform will benefit your business.</p>
                    <a href="what-we-do.html" class="link-arrow">Learn More</a>
             </div>
             <div class="column-module">
@@ -121,8 +270,9 @@
                 </div>
             </div>
             <div class="column-module login right">
+                <img class="MUFG-logo" src="static-assets/images/logo-mufg.png" alt="MUFG logo">
                 <h4><strong>MUFG SCG Program Participants</strong></h4>
-                <a href="#" class="btn scg">Log In</a>
+                <a href="/tps2/html/authentication/userSecurity.html#/login" class="btn scg">Log In</a>
             </div>
         </div>
     </div>
@@ -131,30 +281,60 @@
                 <div class="column-module border">
                     <div class="module-image"><img srcset="static-assets/images/image-2.png" alt="open book in a library"></div>
                     <div class="module-content" style="padding: 20px">
-                        <div class="content-headline"><a href="#">Supplier Education Center</a></div>
-                        <div class="content-description" style="padding-top: 5vh">
+                        <div class="content-headline"><a href="what-we-do.html">Supplier Education Center</a></div>
+                        <div class="content-description" style="padding-top: 20px">
                             <p>See how Supply Chain Finance works and explore the benefits of managing your working capital with SCF</p>
-                            <a href="#" class="link-arrow">Learn More</a>
+                            <a href="what-we-do.html" class="link-arrow">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="column-module border">
                     <div class="module-image"><img srcset="static-assets/images/image-3.png" alt="people working at a table together"></div>
                     <div class="module-content" style="padding: 20px">
-                        <div class="content-headline"><a href="#">What You Need to Know</a></div>
-                        <div class="content-description" style="padding-top: 5vh">
-                            <p>Earlier this year, MUFG purchased the Trade Payables Services (TPS) platform. GE Capital's early-payment plan is changing and Suppliers are invited to join the MUFG Supply Chain Finance Program.</p>
-                            <a href="#" class="link-arrow">Learn More</a>
+                        <div class="content-headline"><a href="what-we-do.html">What You Need to Know</a></div>
+                        <div class="content-description" style="padding-top: 20px">
+                            <p>In early 2019, MUFG purchased the Trade Payables Services (TPS) platform from GE Capital. Suppliers are invited to join the MUFG Supply Chain Finance Program.</p>
+                            <a href="what-we-do.html" class="link-arrow">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div><!-- /row -->
 </div><!-- /container-content -->
 
-<!--#include file="./Footer.html"-->
+<!--- Footer -->
+<div class="container container-footer">
+        <div class="row">
+            <div class="footer-block footer-links">
+                <div class="links-column column-terms">
+                    <div class="link-header">Terms of Use</div>
+                    <ul>
+                        <li><a href="https://mufgamericas.com/personal-information-protection-policy" target="_blank" rel="noopener">Privacy and Security</a></li>
+                        <li><a href="https://mufgamericas.com/terms-and-conditions" target="_blank" rel="noopener">Terms of Use</a></li>
+                        <li><a href="https://mufgamericas.com/usa-patriot-act" target="_blank" rel="noopener">USA PATRIOT Act</a></li>
+                    </ul>
+                </div>
+                
+                <div class="links-column column-follow">
+                    <div class="link-header">Follow Us</div>
+                  <a class="link-linkedin" href="https://www.linkedin.com/company/mufg/" target="_blank" rel="noopener"></a>
+                  <a class="link-twitter" href="https://twitter.com/mufgamericas" target="_blank" rel="noopener"></a>
+                  <a class="link-youtube" href="https://www.youtube.com/channel/UCvaFF_qEJvVA3v6AXx7mfHw" target="_blank" rel="noopener"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-block">
+        <div class="footer-block footer-copyright">&copy; 
+              <script type="text/javascript">
+                  document.write(new Date().getFullYear());
+              </script>  Mitsubishi UFJ Financial Group, Inc. All rights reserved the MUFG logo and name is a service mark of Mitsubishi UFJ Financial Group, Inc.
+          </div>
+      </div>
+      </div>
+      
+      
 </div>
 
-<script type="text/javascript" src="scripts/js/jquery-1.11.3.min.js"></script>
+<!-- needed for carousel, hover overlay, mobile hamburger drawer -->
 <script type="text/javascript" src="scripts/js/jquery-libs.js"></script>
 <script type="text/javascript" src="scripts/js/slick.js"></script>
 <script type="text/javascript" src="scripts/js/ub.cibo.MUFGAmericas.js"></script>
