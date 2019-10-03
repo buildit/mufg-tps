@@ -959,6 +959,15 @@ a.email-faq {
   line-height: -1em;
 }
 
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
+  /* IE10+ specific styles go here */
+  a.email-img,
+  a.email-faq { 
+    height: 16px;
+  }
+}
+
 /* Social Side
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 div.column-side.social > * {
@@ -2165,7 +2174,12 @@ label {
     padding-bottom: 30px; }
 
 .homepage .news-carousel {
-  padding: 0 27px; }
+  padding: 0 27px;
+  opacity:0 }
+
+.homepage .news-carousel.slick-initialized {
+  opacity:1;
+}
 
 .homepage .news-item {
   position: relative;
@@ -2252,6 +2266,11 @@ label {
   .homepage .news-item .item-title {
     color: white;
     }
+    @media screen and (max-width: 425px) {
+      .homepage .news-item .item-title {
+        font-size:1em;
+      }
+    }
 @media screen and (min-width: 768px) {
   .homepage .section {
     position: relative;
@@ -2300,7 +2319,9 @@ label {
     width: 692px;
     margin: 0 auto;
     padding: 0;
-    overflow: visible; }
+    overflow: visible; 
+    max-height: 252px;
+ }
     .homepage .news-carousel .slick-list {
       overflow: visible; }
   .homepage .news-item {
