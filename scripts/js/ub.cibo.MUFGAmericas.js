@@ -48,7 +48,7 @@ var jquery = jQuery.noConflict();
                     }
                 ],
                 autoplay: true,
-                autoplaySpeed: 2000
+                autoplaySpeed: 5000
             });
         }
 
