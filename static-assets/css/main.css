@@ -1188,6 +1188,15 @@ textarea:focus {
   .contact-row  #contact-company {
     width: 48%;
   }
+  .contact-row  #btnrefresh {
+    width: 85px !important;
+    height: 36px !important;
+    display:block;
+    padding-left: 1.2em;
+  }
+  .contact-column  #captcha-location{
+      width: 48% !important;
+  }
   
   #contact-form .captcha-box {
     border: 1px solid gray;
@@ -1195,6 +1204,12 @@ textarea:focus {
     width: 50px;
     height: 50px;
     margin: 2%;
+  }
+  
+  #contact-form #progressImage {
+  width:25px !important;
+  height:25px !important; 
+  display:none
   }
 
 #contact-form .submit-btn {
